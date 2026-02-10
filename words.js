@@ -454,6 +454,150 @@ const words = [
     meaning: "社会, 〜界",
     page: 36,
     section: 2
+  },
+  {
+    word: "technology",
+    meaning: "科学技術",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "culture",
+    meaning: "文化",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "appropriate",
+    meaning: "適切な",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "likely",
+    meaning: "ありそうな",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "possible",
+    meaning: "可能な",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "individual",
+    meaning: "個々の",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "public",
+    meaning: "公の",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "common",
+    meaning: "共通の",
+    page: 38,
+    section: 3
+  },
+  {
+    word: "certain",
+    meaning: "確信して",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "similar",
+    meaning: "似ている, 類似した",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "recent",
+    meaning: "最近の",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "major",
+    meaning: "主要な; 大きい",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "patient",
+    meaning: "忍耐強い",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "particular",
+    meaning: "特定の",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "physical",
+    meaning: "身体の",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "various",
+    meaning: "様々な",
+    page: 40,
+    section: 3
+  },
+  {
+    word: "available",
+    meaning: "手に入る",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "native",
+    meaning: "出生地の",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "political",
+    meaning: "政治(上)の",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "due",
+    meaning: "予定された",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "blank",
+    meaning: "空白の",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "ancient",
+    meaning: "古代の",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "correct",
+    meaning: "正しい",
+    page: 42,
+    section: 3
+  },
+  {
+    word: "despite",
+    meaning: "〜にもかかわらず",
+    page: 42,
+    section: 3
   }
 ];
 
