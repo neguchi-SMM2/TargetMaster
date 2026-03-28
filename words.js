@@ -1798,6 +1798,1206 @@ const words = [
     meaning: "〜するのに(対し), 〜する一方",
     page: 94,
     section: 9
+  },
+  {
+    word: "predict",
+    meaning: "を予言する",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "examine",
+    meaning: "を調べる",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "trust",
+    meaning: "を信頼する",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "stick",
+    meaning: "を動けなくする",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "emerge",
+    meaning: "現れる",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "vary",
+    meaning: "さまざまである",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "release",
+    meaning: "を放出する",
+    page: 96,
+    section: 10
+  },
+  {
+    word: "divide",
+    meaning: "を分ける",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "enable",
+    meaning: "(人)が...できるようにする",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "judge",
+    meaning: "を判断する",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "rely",
+    meaning: "断る",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "engage",
+    meaning: "を従事させる",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "shift",
+    meaning: "を変える, 移す",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "adopt",
+    meaning: "を採用する",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "acquire",
+    meaning: "を得る",
+    page: 98,
+    section: 10
+  },
+  {
+    word: "expand",
+    meaning: "を拡大する",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "refuse",
+    meaning: "を拒む",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "strike",
+    meaning: "の心を打つ",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "repeat",
+    meaning: "を繰り返す",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "consume",
+    meaning: "を消費する",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "confuse",
+    meaning: "を混合する",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "select",
+    meaning: "を選ぶ, えり抜く",
+    page: 100,
+    section: 10
+  },
+  {
+    word: "evolve",
+    meaning: "(徐々に)発展する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "convince",
+    meaning: "を納得させる",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "recall",
+    meaning: "を思い出す",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "destroy",
+    meaning: "を破壊する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "preserve",
+    meaning: "を保存する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "organize",
+    meaning: "を準備する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "warn",
+    meaning: "(人に)警告する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "address",
+    meaning: "(問題など)に対処する",
+    page: 102,
+    section: 10
+  },
+  {
+    word: "operate",
+    meaning: "を操作する",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "participate",
+    meaning: "参加する",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "surround",
+    meaning: "を取り巻く",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "flow",
+    meaning: "流れる",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "bore",
+    meaning: "(人)を退屈させる, うんざりさせる",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "complain",
+    meaning: "不平を言う",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "host",
+    meaning: "を主催する",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "combine",
+    meaning: "を結びつける",
+    page: 104,
+    section: 10
+  },
+  {
+    word: "extend",
+    meaning: "を伸ばす",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "appreciate",
+    meaning: "を正答に評価する",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "target",
+    meaning: "目標",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "element",
+    meaning: "要素, 成分",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "principle",
+    meaning: "原則, 原理",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "phenomenon",
+    meaning: "現象",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "atmosphere",
+    meaning: "大気",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "origin",
+    meaning: "起源",
+    page: 106,
+    section: 11
+  },
+  {
+    word: "personality",
+    meaning: "個性, 性格",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "capacity",
+    meaning: "(最大)容量, 収容能力",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "profit",
+    meaning: "利益",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "circumstance",
+    meaning: "状況, 事情",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "manner",
+    meaning: "作法",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "threat",
+    meaning: "脅威",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "resident",
+    meaning: "居住者",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "wealth",
+    meaning: "富",
+    page: 108,
+    section: 11
+  },
+  {
+    word: "institution",
+    meaning: "機関",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "authority",
+    meaning: "(関係)当局",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "vote",
+    meaning: "投票",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "sight",
+    meaning: "光景",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "campaign",
+    meaning: "運動",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "fund",
+    meaning: "基金, 資金",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "web",
+    meaning: "ウェブ",
+    page: 110,
+    section: 11
+  },
+  {
+    word: "symbol",
+    meaning: "象徴, シンボル",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "analysis",
+    meaning: "分析(結果)",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "version",
+    meaning: "(本・製品などの)版",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "perspective",
+    meaning: "観点, 見方",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "crisis",
+    meaning: "危機",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "disaster",
+    meaning: "災害",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "lecture",
+    meaning: "講義, 講演",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "psychology",
+    meaning: "心理学",
+    page: 112,
+    section: 11
+  },
+  {
+    word: "gender",
+    meaning: "(社会的・文化的)性, 性別",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "custom",
+    meaning: "(社会的な)習慣",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "court",
+    meaning: "裁判所, 法廷",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "desert",
+    meaning: "砂漠",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "soil",
+    meaning: "土地, 土壌",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "agriculture",
+    meaning: "農業",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "fossil",
+    meaning: "化石",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "document",
+    meaning: "(公)文書, 書類",
+    page: 114,
+    section: 11
+  },
+  {
+    word: "vocabulary",
+    meaning: "語彙",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "intelligent",
+    meaning: "聡明な",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "conscious",
+    meaning: "意識して, 気づいて",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "capable",
+    meaning: "能力がある",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "accurate",
+    meaning: "正確な",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "fundamental",
+    meaning: "基本的な",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "artificial",
+    meaning: "人工の",
+    page: 116,
+    section: 12
+  },
+  {
+    word: "firm",
+    meaning: "確固たる",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "overall",
+    meaning: "総合的な",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "rural",
+    meaning: "田舎の, 田園の",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "military",
+    meaning: "軍の, 軍事(用)の",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "nuclear",
+    meaning: "核の, 原子力の",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "biological",
+    meaning: "生物学(上)の",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "constant",
+    meaning: "絶え間ない",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "severe",
+    meaning: "(人・規律・自体・天気などが)厳しい",
+    page: 118,
+    section: 12
+  },
+  {
+    word: "visual",
+    meaning: "視覚の",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "enormous",
+    meaning: "莫大な, 巨大な",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "convenient",
+    meaning: "便利な, 都合のいい",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "domestic",
+    meaning: "家庭の",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "mass",
+    meaning: "大規模な, 大量の",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "typical",
+    meaning: "典型的な",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "overseas",
+    meaning: "海外へ[に, で]",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "nevertheless",
+    meaning: "それにもかかわらず",
+    page: 120,
+    section: 12
+  },
+  {
+    word: "demonstrate",
+    meaning: "を論証(証明)する",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "behave",
+    meaning: "振る舞う",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "educate",
+    meaning: "を教育する",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "purchase",
+    meaning: "を購入する",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "recommend",
+    meaning: "を勧める",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "admit",
+    meaning: "(を)(しぶしぶ)認める",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "generate",
+    meaning: "を生み出す",
+    page: 122,
+    section: 13
+  },
+  {
+    word: "explore",
+    meaning: "(を)調査[探求]する",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "amaze",
+    meaning: "をびっくりさせる",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "tear",
+    meaning: "を引き裂く",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "settle",
+    meaning: "を解決する",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "afford",
+    meaning: "を持つ[する]余裕がある",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "conclude",
+    meaning: "と結論づける",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "advertise",
+    meaning: "を宣伝する",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "encounter",
+    meaning: "に遭遇する",
+    page: 124,
+    section: 13
+  },
+  {
+    word: "remind",
+    meaning: "に思い出させる",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "locate",
+    meaning: "位置する",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "aid",
+    meaning: "を援助する, 助ける",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "bite",
+    meaning: "(を)かむ, (に)かみつく",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "deliver",
+    meaning: "を配達する",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "perceive",
+    meaning: "に気づく",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "distinguish",
+    meaning: "を区別する",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "imply",
+    meaning: "を暗に意味する",
+    page: 126,
+    section: 13
+  },
+  {
+    word: "handle",
+    meaning: "を処理する, 扱う",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "praise",
+    meaning: "を賞賛する",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "appreal",
+    meaning: "訴える",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "insist",
+    meaning: "(を)強く主張する",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "compete",
+    meaning: "競う",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "rank",
+    meaning: "を位置づける, 評価する",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "deny",
+    meaning: "を否定する",
+    page: 128,
+    section: 13
+  },
+  {
+    word: "reject",
+    meaning: "を拒否する",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "intend",
+    meaning: "を意図する",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "expose",
+    meaning: "をさらす",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "favor",
+    meaning: "に賛成する",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "inspire",
+    meaning: "(人)を奮起させる",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "propose",
+    meaning: "を提案する",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "spell",
+    meaning: "(語)をつづる",
+    page: 130,
+    section: 13
+  },
+  {
+    word: "breathe",
+    meaning: "呼吸する",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "repair",
+    meaning: "を修理する",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "consist",
+    meaning: "成る",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "comment",
+    meaning: "意見",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "instruction",
+    meaning: "指示",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "religion",
+    meaning: "宗教",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "neighborhood",
+    meaning: "地域",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "laboratory",
+    meaning: "実験室, 研究室",
+    page: 132,
+    section: 14
+  },
+  {
+    word: "presence",
+    meaning: "存在",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "confidence",
+    meaning: "自信",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "harm",
+    meaning: "害, 損害",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "instrument",
+    meaning: "器具",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "category",
+    meaning: "部類, 区分",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "capital",
+    meaning: "資本",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "outcome",
+    meaning: "結果",
+    page: 134,
+    section: 14
+  },
+  {
+    word: "notion",
+    meaning: "概念, 観念",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "review",
+    meaning: "(書物などの)論評",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "trait",
+    meaning: "特性",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "diversity",
+    meaning: "多様性",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "victim",
+    meaning: "犠牲(者), 被害者",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "occasion",
+    meaning: "場合, 時",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "facility",
+    meaning: "施設, 設備",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "stock",
+    meaning: "在庫品",
+    page: 136,
+    section: 14
+  },
+  {
+    word: "conference",
+    meaning: "会議",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "humanity",
+    meaning: "人類",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "dialect",
+    meaning: "方言",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "proportion",
+    meaning: "割合",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "tip",
+    meaning: "助言, 秘訣",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "lawyer",
+    meaning: "弁護士",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "stuff",
+    meaning: "(漠然と)物",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "comfort",
+    meaning: "快適さ",
+    page: 138,
+    section: 14
+  },
+  {
+    word: "philosophy",
+    meaning: "哲学",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "mammal",
+    meaning: "哺乳動物",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "quantity",
+    meaning: "量",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "landscape",
+    meaning: "風景",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "tribe",
+    meaning: "部族",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "organ",
+    meaning: "器官, 臓器",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "trial",
+    meaning: "試み, (品質・性能などの)試験",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "norm",
+    meaning: "規範",
+    page: 140,
+    section: 14
+  },
+  {
+    word: "code",
+    meaning: "規範",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "substance",
+    meaning: "物質",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "multiple",
+    meaning: "多様な",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "numerous",
+    meaning: "非常に数の多い",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "narrow",
+    meaning: "狭い",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "widespread",
+    meaning: "広範囲に渡る",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "sufficient",
+    meaning: "十分な",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "proper",
+    meaning: "適切な",
+    page: 142,
+    section: 15
+  },
+  {
+    word: "linguistic",
+    meaning: "言語の, 言語学の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "annual",
+    meaning: "年1回の, 例年の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "contemporary",
+    meaning: "現代の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "contrary",
+    meaning: "反対の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "strict",
+    meaning: "(規則などが)厳しい",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "civil",
+    meaning: "市民の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "odd",
+    meaning: "奇妙な",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "unknown",
+    meaning: "不明の",
+    page: 144,
+    section: 15
+  },
+  {
+    word: "superior",
+    meaning: "よりすぐれた",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "sensitive",
+    meaning: "敏感な",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "violent",
+    meaning: "(人・気質などが)激しい",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "virtual",
+    meaning: "仮想の",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "regardless",
+    meaning: "かまわない, 無頓着な",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "immediate",
+    meaning: "即座の",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "crucial",
+    meaning: "重要な",
+    page: 146,
+    section: 15
+  },
+  {
+    word: "somewhat",
+    meaning: "いくぶん, 多少",
+    page: 146,
+    section: 15
   }
 ];
 
@@ -1813,5 +3013,8 @@ const sectionNames = {
   9: "9, 90~94",
   10: "10, 96~104",
   11: "11, 106~114",
-  12: "12, 116~120"
+  12: "12, 116~120",
+  13: "13, 122~130",
+  14: "14, 132~140",
+  15: "15, 142~146"
 };
