@@ -2998,6 +2998,606 @@ const words = [
     meaning: "いくぶん, 多少",
     page: 146,
     section: 15
+  },
+  {
+    word: "interpret",
+    meaning: "を解釈する",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "translate",
+    meaning: "を翻訳する",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "concentrate",
+    meaning: "を集中する",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "request",
+    meaning: "に頼む",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "criticize",
+    meaning: "を批判する",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "overcome",
+    meaning: "を克服する",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "obtain",
+    meaning: "を得る",
+    page: 148,
+    section: 16
+  },
+  {
+    word: "inform",
+    meaning: "に知らせる",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "ensure",
+    meaning: "を確実にする",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "announce",
+    meaning: "を発表する, 知らせる",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "grant",
+    meaning: "(人)に(許可・権利など)を与える",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "freeze",
+    meaning: "凍る",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "oppose",
+    meaning: "に反対する",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "differ",
+    meaning: "異なる",
+    page: 150,
+    section: 16
+  },
+  {
+    word: "hate",
+    meaning: "をひどく嫌う",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "emphasize",
+    meaning: "を強調する",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "employ",
+    meaning: "を雇う",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "credit",
+    meaning: "(功績など)を帰する",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "transform",
+    meaning: "を変える",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "construct",
+    meaning: "を建設する",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "arise",
+    meaning: "生じる",
+    page: 152,
+    section: 16
+  },
+  {
+    word: "beat",
+    meaning: "を打ち負かす",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "regret",
+    meaning: "を後悔する",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "alter",
+    meaning: "を変える",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "absorb",
+    meaning: "を吸収する",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "disappoint",
+    meaning: "を失望させる",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "cure",
+    meaning: "を治す",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "transport",
+    meaning: "を輸送する",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "rush",
+    meaning: "急いでいく",
+    page: 154,
+    section: 16
+  },
+  {
+    word: "hang",
+    meaning: "を掛ける",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "blame",
+    meaning: "を責める",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "ban",
+    meaning: "を(法的に)禁止する",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "fascinate",
+    meaning: "を魅了する",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "recover",
+    meaning: "回復する",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "celebrate",
+    meaning: "を祝う",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "manufacture",
+    meaning: "を製造する",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "interact",
+    meaning: "影響し合う",
+    page: 156,
+    section: 16
+  },
+  {
+    word: "arrange",
+    meaning: "の段取りを付ける",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "adjust",
+    meaning: "を調整する",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "confirm",
+    meaning: "を確認する",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "insight",
+    meaning: "見識, 理解(力)",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "innovation",
+    meaning: "革新",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "budget",
+    meaning: "予算",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "fee",
+    meaning: "料金",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "expense",
+    meaning: "経費",
+    page: 158,
+    section: 17
+  },
+  {
+    word: "dept",
+    meaning: "借金, 負債",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "loan",
+    meaning: "貸付金, 融資",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "duty",
+    meaning: "義務",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "alarm",
+    meaning: "不安, おそれ",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "emergency",
+    meaning: "緊急(事態)",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "democracy",
+    meaning: "民主主義, 民主政治",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "minister",
+    meaning: "大臣",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "fellow",
+    meaning: "仲間, 同僚",
+    page: 160,
+    section: 17
+  },
+  {
+    word: "candidate",
+    meaning: "候補(者)",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "corporation",
+    meaning: "(大)企業",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "stereotype",
+    meaning: "固定概念",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "route",
+    meaning: "道(筋)",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "disorder",
+    meaning: "障害, (心身の)不調",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "depression",
+    meaning: "憂鬱",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "weapon",
+    meaning: "兵器, 武器",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "immigration",
+    meaning: "(他国からの)移民, 移住",
+    page: 162,
+    section: 17
+  },
+  {
+    word: "barrier",
+    meaning: "障壁",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "disadvantage",
+    meaning: "不利",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "mood",
+    meaning: "気分",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "motion",
+    meaning: "動き, 動作",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "routine",
+    meaning: "決まり切った仕事",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "discipline",
+    meaning: "規律, しつけ",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "myth",
+    meaning: "作り話",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "hypothesis",
+    meaning: "仮説",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "physician",
+    meaning: "(特に米)医師",
+    page: 164,
+    section: 17
+  },
+  {
+    word: "client",
+    meaning: "顧客",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "colony",
+    meaning: "植民地",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "statistics",
+    meaning: "統計",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "grain",
+    meaning: "穀物",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "ingredient",
+    meaning: "材料, 成分",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "treasure",
+    meaning: "宝物, 財宝",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "contract",
+    meaning: "契約(書)",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "welfare",
+    meaning: "福祉, 幸福",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "prime",
+    meaning: "主要な, もっとも重要な",
+    page: 166,
+    section: 17
+  },
+  {
+    word: "curious",
+    meaning: "好奇心の強い",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "dramatic",
+    meaning: "劇的な",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "distinct",
+    meaning: "明らかに異なる",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "anxious",
+    meaning: "心配して",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "vital",
+    meaning: "必要不可欠な",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "conventional",
+    meaning: "従来の",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "abstract",
+    meaning: "抽象的な",
+    page: 168,
+    section: 18
+  },
+  {
+    word: "minor",
+    meaning: "重要でない",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "extraordinary",
+    meaning: "並外れた",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "stable",
+    meaning: "安定した",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "flexible",
+    meaning: "融通の効く, 柔軟な",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "brief",
+    meaning: "簡潔な",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "aggressive",
+    meaning: "攻撃的な",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "visible",
+    meaning: "(目に)見える",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "unexpected",
+    meaning: "思いがけない, 不意の",
+    page: 170,
+    section: 18
+  },
+  {
+    word: "ethnic",
+    meaning: "民族の, 人種の",
+    page: 172,
+    section: 18
+  },
+  {
+    word: "alien",
+    meaning: "異質の",
+    page: 172,
+    section: 18
+  },
+  {
+    word: "initial",
+    meaning: "始める",
+    page: 172,
+    section: 18
+  },
+  {
+    word: "exact",
+    meaning: "正確な",
+    page: 172,
+    section: 18
+  },
+  {
+    word: "precise",
+    meaning: "正確な",
+    page: 172,
+    section: 18
+  },
+  {
+    word: "latter",
+    meaning: "後者の, 後半の",
+    page: 172,
+    section: 18
   }
 ];
 
@@ -3016,5 +3616,14 @@ const sectionNames = {
   12: "12, 116~120",
   13: "13, 122~130",
   14: "14, 132~140",
-  15: "15, 142~146"
+  15: "15, 142~146",
+  16: "16, 148~156",
+  17: "17, 158~166",
+  18: "18, 168~172",
+  19: "19, 174~182",
+  20: "20, 184~192",
+  21: "21, 194~198",
+  22: "22, 200~208",
+  23: "23, 210~218",
+  24: "24, 220~224"
 };
