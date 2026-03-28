@@ -3598,6 +3598,606 @@ const words = [
     meaning: "後者の, 後半の",
     page: 172,
     section: 18
+  },
+  {
+    word: "commit",
+    meaning: "献身する",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "stimulate",
+    meaning: "を刺激する",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "enhance",
+    meaning: "(価値など)を高める, 増す",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "pursue",
+    meaning: "を追求する",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "react",
+    meaning: "反応する",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "disagree",
+    meaning: "不賛成である",
+    page: 174,
+    section: 19
+  },
+  {
+    word: "stare",
+    meaning: "じっと見る",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "abandon",
+    meaning: "を捨てる",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "quit",
+    meaning: "をやめる",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "capture",
+    meaning: "をとらえる",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "transfer",
+    meaning: "を移す",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "bother",
+    meaning: "を悩ます",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "persuade",
+    meaning: "を説得する",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "rent",
+    meaning: "を賃借りする",
+    page: 176,
+    section: 19
+  },
+  {
+    word: "breed",
+    meaning: "を繁殖させる, 育てる",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "invest",
+    meaning: "を投資する",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "reserve",
+    meaning: "を予約する",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "trace",
+    meaning: "(足跡・起源など)をたどる",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "illustrate",
+    meaning: "を説明する",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "advise",
+    meaning: "に忠告(助言)する",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "convey",
+    meaning: "を伝える",
+    page: 178,
+    section: 19
+  },
+  {
+    word: "attach",
+    meaning: "を(取り)つける",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "stretch",
+    meaning: "を伸ばす",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "puzzle",
+    meaning: "を当惑させる",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "disturb",
+    meaning: "をかき乱す",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "crash",
+    meaning: "衝突する, 墜落する",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "cope",
+    meaning: "うまく処理する",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "permit",
+    meaning: "を許可する",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "impress",
+    meaning: "を感動させる",
+    page: 180,
+    section: 19
+  },
+  {
+    word: "suspect",
+    meaning: "ではないかと思う",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "upset",
+    meaning: "を動揺させる",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "frighten",
+    meaning: "(人)を怖がらせる",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "import",
+    meaning: "を輸入する",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "export",
+    meaning: "を輸出する",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "investigate",
+    meaning: "を調査する",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "monitor",
+    meaning: "を監視する",
+    page: 182,
+    section: 19
+  },
+  {
+    word: "calculate",
+    meaning: "を計算する",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "eliminate",
+    meaning: "を取り除く",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "ease",
+    meaning: "を軽減する",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "launch",
+    meaning: "を開始する",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "sequence",
+    meaning: "連続",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "therapy",
+    meaning: "療法",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "symptom",
+    meaning: "症状",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "incident",
+    meaning: "出来事, 事件",
+    page: 184,
+    section: 20
+  },
+  {
+    word: "witness",
+    meaning: "目撃者",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "sum",
+    meaning: "(金)額",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "burden",
+    meaning: "負担",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "tone",
+    meaning: "口調",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "honor",
+    meaning: "光栄",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "award",
+    meaning: "賞",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "priority",
+    meaning: "優先(事項)",
+    page: 186,
+    section: 20
+  },
+  {
+    word: "logic",
+    meaning: "論理",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "minimum",
+    meaning: "最小限度",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "exception",
+    meaning: "例外",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "clue",
+    meaning: "手がかり",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "bond",
+    meaning: "絆",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "virus",
+    meaning: "ウイルス",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "surgery",
+    meaning: "(外科)手術",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "insurance",
+    meaning: "保険",
+    page: 188,
+    section: 20
+  },
+  {
+    word: "frame",
+    meaning: "枠, (額)縁",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "shelter",
+    meaning: "避難(所), 保護",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "territory",
+    meaning: "領土",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "boundary",
+    meaning: "境界(線)",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "habitat",
+    meaning: "生息地",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "district",
+    meaning: "地区",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "conservation",
+    meaning: "(動植物などの)保護",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "harvest",
+    meaning: "収穫(物)",
+    page: 190,
+    section: 20
+  },
+  {
+    word: "predator",
+    meaning: "捕食動物",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "trap",
+    meaning: "わな",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "trick",
+    meaning: "こつ",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "fault",
+    meaning: "責任",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "discount",
+    meaning: "割引",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "bias",
+    meaning: "偏見",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "cooperation",
+    meaning: "協力, 共同",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "patent",
+    meaning: "特許(権)",
+    page: 192,
+    section: 20
+  },
+  {
+    word: "dialogue",
+    meaning: "対話, 会話",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "component",
+    meaning: "構成要素",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "reputation",
+    meaning: "評判",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "verbal",
+    meaning: "言葉の",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "internal",
+    meaning: "内部の",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "solid",
+    meaning: "しっかりした",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "remote",
+    meaning: "遠く離れた",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "principal",
+    meaning: "主要な",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "sophisticated",
+    meaning: "高性能の, 精巧な",
+    page: 194,
+    section: 21
+  },
+  {
+    word: "equivalent",
+    meaning: "等しい, 相当する",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "rational",
+    meaning: "理想的な",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "relevant",
+    meaning: "関係がある",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "absolute",
+    meaning: "絶対的な",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "frequent",
+    meaning: "頻繁な",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "permanent",
+    meaning: "永続的な",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "intense",
+    meaning: "強烈な",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "meaningful",
+    meaning: "意味のある",
+    page: 196,
+    section: 21
+  },
+  {
+    word: "evil",
+    meaning: "邪悪な",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "extinct",
+    meaning: "絶滅した",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "random",
+    meaning: "無作為の",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "raw",
+    meaning: "生の",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "rude",
+    meaning: "無礼な",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "mere",
+    meaning: "単なる, ほんの",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "tropical",
+    meaning: "熱帯の",
+    page: 198,
+    section: 21
+  },
+  {
+    word: "forth",
+    meaning: "前へ, 先へ",
+    page: 198,
+    section: 21
   }
 ];
 
