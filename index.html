@@ -643,8 +643,8 @@
       setAnswerFeedback(`最終スコア: ${correctCount} / ${totalCount}`, correctCount === totalCount);
       incorrectWords = Array.from(new Set(incorrectWords.concat(sub_incorrectWords)));
       if (sub_incorrectWords.length > 0) {
-        const incorrectList = sub_incorrectWords.map(w => `${w.word} - ${w.meaning}`).join('\n');
-        document.getElementById('incorrectWords').textContent = `不正解だった単語:\n${incorrectList}`;
+        const incorrectList = sub_incorrectWords.map(w => `${w.word} - ${w.meaning}`).join('<br>');
+        document.getElementById('incorrectWords').innerHTML = `<h2>不正解だった単語</h2><br>${incorrectList}`;
       }
       return;
     }
