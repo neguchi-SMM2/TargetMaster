@@ -370,6 +370,7 @@
     <div class="score">正解数: <span id="correctCount">0</span>問<br><span id="currentQuestionIndex">0</span> / <span id="totalCount">0</span></div>
     <div class="choices" id="choices"></div>
     <div class="answer-feedback" id="answerFeedback"></div>
+    <div class="incorrectWords" id="incorrectWords"></div>
     <div class="button-group">
       <button id="nextQuestion" onclick="nextQuestion()">次へ</button>
       <br>
@@ -388,6 +389,8 @@
   let totalCount = 0;
   let levelSections = [];
   let sectionSelections = {};
+  let incorrectWords = [];
+  let sub_incorrectWords = [];
 
   // レベルに対応するセクション範囲を取得
   function getLevelSections(level) {
@@ -531,6 +534,8 @@
     if (selectedMode === 'memorize') {
       startMemorize();
     } else if (selectedMode === 'practice') {
+      sub_incorrectWords = [];
+      document.getElementById('incorrectWords').textContent = '';
       startPracticeMenu();
     }
   }
@@ -636,6 +641,11 @@
       document.getElementById('questionWord').innerHTML = "全問終了！";
       document.getElementById('choices').innerHTML = "";
       setAnswerFeedback(`最終スコア: ${correctCount} / ${totalCount}`, correctCount === totalCount);
+      incorrectWords = Array.from(new Set(incorrectWords.concat(sub_incorrectWords)));
+      if (sub_incorrectWords.length > 0) {
+        const incorrectList = sub_incorrectWords.map(w => `${w.word} - ${w.meaning}`).join('\n');
+        document.getElementById('incorrectWords').textContent = `不正解だった単語:\n${incorrectList}`;
+      }
       return;
     }
     const current = practiceWords[currentQuestionIndex];
@@ -690,6 +700,7 @@
           document.getElementById('correctCount').textContent = correctCount;
         } else {
           setAnswerFeedback(`不正解！正解は：${correctAnswer}`, false);
+          sub_incorrectWords.push(current);
           document.body.className = 'incorrect-bg';
         }
         document.getElementById('nextQuestion').disabled = false;
