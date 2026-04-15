@@ -17,7 +17,7 @@
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
       padding: 20px;
-      transition: background-color 0.3s ease;
+      transition: background 0.4s ease;
     }
 
     body.correct-bg {
@@ -85,6 +85,7 @@
       background-color: #ccc;
       cursor: not-allowed;
       transform: none;
+      box-shadow: none;
     }
 
     .hidden {
@@ -187,51 +188,6 @@
       min-height: 30px;
     }
 
-    #startButton {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      background-color: #4CAF50;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
-    }
-
-    #startButton:hover {
-      background-color: #45a049;
-    }
-
-    #backToLevelButton {
-      position: fixed;
-      bottom: 90px;
-      left: 20px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      background-color: #4CAF50;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
-    }
-
-    #backToLevelButton:hover {
-      background-color: #45a049;
-    }
-
-    #clearSelectionsButton {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      background-color: #ff6b6b;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
-    }
-
-    #clearSelectionsButton:hover {
-      background-color: #ee5a52;
-    }
-
     .button-group {
       text-align: center;
       margin-top: 20px;
@@ -251,50 +207,165 @@
       cursor: pointer;
     }
 
-    .button-left-group {
-      text-align: left;
-      margin-top: 20px;
+    /* ── おさらいモードボタン ── */
+    .btn-review {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      position: relative;
+    }
+    .btn-review:hover {
+      background: linear-gradient(135deg, #d97fe0 0%, #d84560 100%);
+      box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+    }
+    .review-badge {
+      display: inline-block;
+      background: #fff;
+      color: #f5576c;
+      border-radius: 12px;
+      font-size: 0.75em;
+      font-weight: 700;
+      padding: 2px 8px;
+      margin-left: 8px;
+      vertical-align: middle;
     }
 
-    .incorrectWords {
+    /* ── 結果画面：不正解カード ── */
+    .result-section {
+      margin-top: 28px;
+    }
+
+    .result-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .result-header-icon {
+      font-size: 1.4em;
+    }
+
+    .result-title {
+      font-size: 1.15em;
+      font-weight: 700;
+      color: #c62828;
+    }
+
+    .result-count-badge {
+      background: #c62828;
+      color: white;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.85em;
+      font-weight: 700;
+    }
+
+    .incorrect-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .incorrect-card {
+      background: linear-gradient(135deg, #fff5f5 0%, #fff0f0 100%);
+      border: 1.5px solid #ffcdd2;
+      border-left: 4px solid #e53935;
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      animation: slideIn 0.3s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .incorrect-card-word {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #c62828;
+    }
+
+    .incorrect-card-meaning {
+      font-size: 1em;
+      color: #555;
+      text-align: right;
+    }
+
+    .incorrect-card-divider {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+
+    /* ── スコアサマリーカード ── */
+    .score-summary {
+      background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+      border: 1.5px solid #a5d6a7;
+      border-radius: 12px;
+      padding: 18px;
       text-align: center;
-      margin-top: 30px;
-      padding: 20px;
-      font-size: 1.2em;
+      margin: 20px 0 0;
+    }
+
+    .score-summary.score-bad {
+      background: linear-gradient(135deg, #fff3e0, #fff8e1);
+      border-color: #ffcc80;
+    }
+
+    .score-summary-label {
+      font-size: 0.95em;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .score-summary-value {
+      font-size: 2.2em;
+      font-weight: 800;
+      color: #2e7d32;
+    }
+
+    .score-summary.score-bad .score-summary-value {
+      color: #e65100;
+    }
+
+    .score-summary-sub {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    /* ── おさらいモード：空の状態 ── */
+    .empty-state {
+      text-align: center;
+      padding: 30px 0;
+      color: #aaa;
+    }
+
+    .empty-state-icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .empty-state-text {
+      font-size: 1em;
     }
 
     @media (max-width: 600px) {
       .container {
         padding: 20px 15px;
       }
-
-      h1 {
-        font-size: 1.5em;
-      }
-
-      h2 {
-        font-size: 1.2em;
-      }
-
-      .word, .question {
-        font-size: 1.6em;
-      }
-
-      button {
-        padding: 10px 20px;
-        font-size: 0.95em;
-      }
-
-      #startButton {
-        bottom: 15px;
-        right: 15px;
-        padding: 12px 24px;
-        font-size: 1em;
-      }
-
-      .section-list {
-        max-height: 1200px;
-      }
+      h1 { font-size: 1.5em; }
+      h2 { font-size: 1.2em; }
+      .word, .question { font-size: 1.6em; }
+      button { padding: 10px 20px; font-size: 0.95em; }
+      .section-list { max-height: 1200px; }
+      .incorrect-card { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .incorrect-card-meaning { text-align: left; }
     }
   </style>
   <script src="words.js"></script>
@@ -308,6 +379,11 @@
     <div class="menu">
       <button onclick="chooseMode('memorize')">暗記モード</button>
       <button onclick="chooseMode('practice')">実践モード</button>
+      <br>
+      <button class="btn-review" onclick="chooseMode('review')">
+        おさらいモード
+        <span class="review-badge" id="reviewBadge">0</span>
+      </button>
     </div>
   </div>
 
@@ -335,13 +411,13 @@
       <button onclick="clearAllSelections()">選択を全削除</button>
       <button onclick="selectAllSections()">すべて選択</button>
     </div>
-      <h2 id="selectedModeTitle"></h2>
+    <h2 id="selectedModeTitle"></h2>
     <h3>セクションを選択してください（複数可）</h3>
     <div id="sectionList"></div>
     <div class="button-group">
       <button onclick="startSelectedMode()">スタート</button>
     </div>
-    </div>
+  </div>
 
   <!-- 暗記モード画面 -->
   <div id="memorizeMenu" class="container hidden">
@@ -357,7 +433,7 @@
 
   <!-- 実践モード設定画面 -->
   <div id="practiceMenu" class="container hidden">
-    <h2>実践モード設定</h2>
+    <h2 id="practiceMenuTitle">実践モード設定</h2>
     <div class="checkbox-container">
       <label>
         <input type="checkbox" id="shuffleOption">
@@ -367,7 +443,7 @@
     <div class="button-group">
       <button onclick="startPractice()">スタート</button>
       <br>
-      <button onclick="backToSectionMenu()">セクション選択に戻る</button>
+      <button id="practiceMenuBackBtn" onclick="backFromPracticeMenu()">セクション選択に戻る</button>
     </div>
   </div>
 
@@ -377,15 +453,63 @@
     <div class="score">正解数: <span id="correctCount">0</span>問<br><span id="currentQuestionIndex">0</span> / <span id="totalCount">0</span></div>
     <div class="choices" id="choices"></div>
     <div class="answer-feedback" id="answerFeedback"></div>
-    <div class="incorrectWords" id="incorrectWords"></div>
+
+    <!-- スコアサマリー（結果時のみ表示） -->
+    <div id="scoreSummary" class="hidden"></div>
+
+    <!-- 不正解カード（結果時のみ表示） -->
+    <div id="incorrectSection" class="result-section hidden"></div>
+
     <div class="button-group">
       <button id="nextQuestion" onclick="nextQuestion()">次へ</button>
       <br>
-      <button onclick="backToPracticeMenu()">実践モードメニューに戻る</button>
+      <button id="backFromQuestionBtn" onclick="backFromQuestion()">メニューに戻る</button>
     </div>
   </div>
 
 <script>
+  // ─────────────────────────────────────────
+  //  永続ストレージ（localStorage）
+  // ─────────────────────────────────────────
+  const STORAGE_KEY = 'vocabmaster_incorrect_words';
+
+  function loadIncorrectWords() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEY);
+      return data ? JSON.parse(data) : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveIncorrectWords(list) {
+    try {
+      // word+meaningで重複排除
+      const unique = [];
+      const seen = new Set();
+      list.forEach(w => {
+        const key = w.word + '||' + w.meaning;
+        if (!seen.has(key)) {
+          seen.add(key);
+          unique.push(w);
+        }
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(unique));
+      updateReviewBadge();
+      return unique;
+    } catch (e) {
+      return list;
+    }
+  }
+
+  function updateReviewBadge() {
+    const list = loadIncorrectWords();
+    document.getElementById('reviewBadge').textContent = list.length;
+  }
+
+  // ─────────────────────────────────────────
+  //  状態変数
+  // ─────────────────────────────────────────
   let selectedMode = '';
   let selectedLevel = 0;
   let selectedSections = [];
@@ -396,54 +520,37 @@
   let totalCount = 0;
   let levelSections = [];
   let sectionSelections = {};
-  let incorrectWords = [];
-  let sub_incorrectWords = [];
+  let sub_incorrectWords = []; // 今回のセッションで間違えた単語
+  let isReviewMode = false;    // おさらいモードフラグ
 
-  // レベルに対応するセクション範囲を取得
+  // ─────────────────────────────────────────
+  //  レベル・セクション
+  // ─────────────────────────────────────────
   function getLevelSections(level) {
     const ranges = {
-      1: [1, 3],
-      2: [4, 6],
-      3: [7, 9],
-      4: [10, 12],
-      5: [13, 15],
-      6: [16, 18],
-      7: [19, 21],
-      8: [22, 24],
-      9: [25, 27],
-      10: [28, 30],
-      11: [31, 33],
-      12: [34, 36],
-      13: [37, 39],
-      14: [40, 42],
-      15: [43, 45],
-      16: [46, 48],
-      17: [49, 51],
-      18: [52, 54],
-      19: [55, 57]
-    }
+      1: [1, 3], 2: [4, 6], 3: [7, 9], 4: [10, 12],
+      5: [13, 15], 6: [16, 18], 7: [19, 21], 8: [22, 24],
+      9: [25, 27], 10: [28, 30], 11: [31, 33], 12: [34, 36],
+      13: [37, 39], 14: [40, 42], 15: [43, 45], 16: [46, 48],
+      17: [49, 51], 18: [52, 54], 19: [55, 57]
+    };
     const [start, end] = ranges[level];
     const sections = [];
     for (let sec in sectionNames) {
       const secNum = parseInt(sec);
-      if (secNum >= start && secNum <= end) {
-        sections.push(secNum);
-      }
+      if (secNum >= start && secNum <= end) sections.push(secNum);
     }
     return sections.sort((a, b) => a - b);
   }
 
-  // セクションの最初の単語のページ番号を取得
   function getSectionPage(sectionNum) {
     const sectionWord = words.find(w => w.section === sectionNum);
     return sectionWord ? sectionWord.page : '';
   }
 
-  // セクションリストを表示
   function generate_SectionList() {
     const sectionList = document.getElementById('sectionList');
     sectionList.innerHTML = '';
-    
     levelSections.forEach(sec => {
       const div = document.createElement('div');
       div.className = 'section-item';
@@ -453,8 +560,6 @@
       div.innerHTML = `<label><input type="checkbox" value="${sec}" ${checked}> ${sectionNames[sec]}${pageText}</label>`;
       sectionList.appendChild(div);
     });
-    
-    // チェックボックスの変更をリアルタイムで保存
     document.querySelectorAll('#sectionList input[type="checkbox"]').forEach(input => {
       input.addEventListener('change', (e) => {
         const sec = parseInt(e.target.value);
@@ -463,8 +568,28 @@
     });
   }
 
+  // ─────────────────────────────────────────
+  //  画面遷移
+  // ─────────────────────────────────────────
   function chooseMode(mode) {
     selectedMode = mode;
+    isReviewMode = (mode === 'review');
+
+    if (isReviewMode) {
+      // おさらいモード：レベル・セクション選択をスキップ
+      const savedWords = loadIncorrectWords();
+      if (savedWords.length === 0) {
+        alert('おさらいする単語がありません。\n実践モードで問題を解いて間違えた単語を貯めましょう！');
+        return;
+      }
+      filteredWords = savedWords;
+      document.getElementById('modeMenu').classList.add('hidden');
+      document.getElementById('practiceMenuTitle').textContent = 'おさらいモード設定';
+      document.getElementById('practiceMenuBackBtn').textContent = 'モード選択に戻る';
+      document.getElementById('practiceMenu').classList.remove('hidden');
+      return;
+    }
+
     document.getElementById('modeMenu').classList.add('hidden');
     document.getElementById('levelMenu').classList.remove('hidden');
     document.getElementById('levelModeTitle').textContent =
@@ -477,7 +602,9 @@
     document.getElementById('levelMenu').classList.add('hidden');
     document.getElementById('sectionMenu').classList.remove('hidden');
     document.getElementById('selectedModeTitle').textContent =
-      selectedMode === 'memorize' ? `暗記モード - Level ${level} セクション選択` : `実践モード - Level ${level} セクション選択`;
+      selectedMode === 'memorize'
+        ? `暗記モード - Level ${level} セクション選択`
+        : `実践モード - Level ${level} セクション選択`;
     generate_SectionList();
   }
 
@@ -488,18 +615,18 @@
 
   function selectAllSections() {
     sectionSelections = {};
-    levelSections.forEach(sec => {
-      sectionSelections[sec] = true;
-    });
+    levelSections.forEach(sec => { sectionSelections[sec] = true; });
     generate_SectionList();
   }
 
   function backToModeMenu() {
     document.getElementById('modeMenu').classList.remove('hidden');
-    document.getElementById('levelMenu').classList.add('hidden');
-    document.getElementById('sectionMenu').classList.add('hidden');
+    ['levelMenu','sectionMenu','memorizeMenu','practiceMenu','practiceQuestion'].forEach(id => {
+      document.getElementById(id).classList.add('hidden');
+    });
     sectionSelections = {};
     document.body.className = '';
+    updateReviewBadge();
   }
 
   function backToLevelMenu() {
@@ -509,9 +636,9 @@
   }
 
   function backToSectionMenu() {
-    document.getElementById('memorizeMenu').classList.add('hidden');
-    document.getElementById('practiceMenu').classList.add('hidden');
-    document.getElementById('practiceQuestion').classList.add('hidden');
+    ['memorizeMenu','practiceMenu','practiceQuestion'].forEach(id => {
+      document.getElementById(id).classList.add('hidden');
+    });
     document.getElementById('sectionMenu').classList.remove('hidden');
     memorizeIndex = 0;
     memorizeStage = 'word';
@@ -519,9 +646,30 @@
     document.body.className = '';
   }
 
-  function backToPracticeMenu() {
+  // 実践モード設定画面からの「戻る」
+  function backFromPracticeMenu() {
+    document.getElementById('practiceMenu').classList.add('hidden');
+    if (isReviewMode) {
+      document.getElementById('modeMenu').classList.remove('hidden');
+      updateReviewBadge();
+    } else {
+      document.getElementById('sectionMenu').classList.remove('hidden');
+    }
+    document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
+    document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
+  }
+
+  // 問題画面からの「メニューに戻る」
+  function backFromQuestion() {
     document.getElementById('practiceQuestion').classList.add('hidden');
-    document.getElementById('practiceMenu').classList.remove('hidden');
+    if (isReviewMode) {
+      document.getElementById('modeMenu').classList.remove('hidden');
+      updateReviewBadge();
+    } else {
+      document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
+      document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
+      document.getElementById('practiceMenu').classList.remove('hidden');
+    }
     document.body.className = '';
   }
 
@@ -534,19 +682,23 @@
   function startSelectedMode() {
     selectedSections = getSelectedSections();
     if (selectedSections.length === 0) {
-      alert("セクションを選択してください");
+      alert('セクションを選択してください');
       return;
     }
     filteredWords = words.filter(w => selectedSections.includes(w.section));
     if (selectedMode === 'memorize') {
       startMemorize();
-    } else if (selectedMode === 'practice') {
-      sub_incorrectWords = [];
-      document.getElementById('incorrectWords').innerHTML = '';
-      startPracticeMenu();
+    } else {
+      document.getElementById('sectionMenu').classList.add('hidden');
+      document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
+      document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
+      document.getElementById('practiceMenu').classList.remove('hidden');
     }
   }
 
+  // ─────────────────────────────────────────
+  //  暗記モード
+  // ─────────────────────────────────────────
   function startMemorize() {
     document.getElementById('sectionMenu').classList.add('hidden');
     document.getElementById('memorizeMenu').classList.remove('hidden');
@@ -558,13 +710,14 @@
 
   function showMemorize() {
     if (memorizeIndex >= filteredWords.length) {
-      document.getElementById('memorizeWord').innerHTML = "お疲れさまでした！";
+      document.getElementById('memorizeWord').innerHTML = 'お疲れさまでした！';
       document.getElementById('nextButton').disabled = true;
       return;
     }
     document.getElementById('nextButton').disabled = false;
     const current = filteredWords[memorizeIndex];
-    document.getElementById('memorizeWord').innerHTML = memorizeStage === 'word' ? current.word : current.meaning;
+    document.getElementById('memorizeWord').innerHTML =
+      memorizeStage === 'word' ? current.word : current.meaning;
   }
 
   function nextMemorize() {
@@ -580,53 +733,44 @@
   function backMemorize() {
     if (memorizeStage === 'meaning') {
       memorizeStage = 'word';
-    } else {
-      if (memorizeIndex > 0) {
-        memorizeIndex--;
-        memorizeStage = 'meaning';
-      }
+    } else if (memorizeIndex > 0) {
+      memorizeIndex--;
+      memorizeStage = 'meaning';
     }
     showMemorize();
   }
 
-  function startPracticeMenu() {
-    document.getElementById('sectionMenu').classList.add('hidden');
-    document.getElementById('practiceMenu').classList.remove('hidden');
-  }
-
+  // ─────────────────────────────────────────
+  //  実践 / おさらいモード
+  // ─────────────────────────────────────────
   let practiceWords = [];
   let currentQuestionIndex = 0;
   let currentCorrectAnswer = '';
-  let currentQuestionType = 'word'; // 'word' または 'meaning'
+  let currentQuestionType = 'word';
 
   function startPractice() {
+    // ★ バグ修正：毎回スタート時にリセット
+    sub_incorrectWords = [];
+
     const shuffle = document.getElementById('shuffleOption').checked;
-    
+
     practiceWords = [];
-    
-    // 通常の問題（英語→日本語）を追加
     filteredWords.forEach(word => {
-      practiceWords.push({
-        ...word,
-        questionType: 'word'
-      });
+      practiceWords.push({ ...word, questionType: 'word' });
     });
-    
-    // 逆問題（日本語→英語）を必ず追加
     filteredWords.forEach(word => {
-      practiceWords.push({
-        ...word,
-        questionType: 'meaning'
-      });
+      practiceWords.push({ ...word, questionType: 'meaning' });
     });
-    
+
     if (shuffle) {
       practiceWords.sort(() => Math.random() - 0.5);
     }
-    
+
     currentQuestionIndex = 0;
     document.getElementById('practiceMenu').classList.add('hidden');
     document.getElementById('practiceQuestion').classList.remove('hidden');
+    document.getElementById('scoreSummary').classList.add('hidden');
+    document.getElementById('incorrectSection').classList.add('hidden');
     setAnswerFeedback('', false);
     correctCount = 0;
     totalCount = practiceWords.length;
@@ -645,38 +789,87 @@
 
   function showPracticeQuestion() {
     if (currentQuestionIndex >= practiceWords.length) {
-      document.getElementById('questionWord').innerHTML = "全問終了！";
-      document.getElementById('choices').innerHTML = "";
-      setAnswerFeedback(`最終スコア: ${correctCount} / ${totalCount}`, correctCount === totalCount);
-      incorrectWords = Array.from(new Set(incorrectWords.concat(sub_incorrectWords)));
+      // ── 全問終了 ──
+      document.getElementById('questionWord').innerHTML = '全問終了！';
+      document.getElementById('choices').innerHTML = '';
+      setAnswerFeedback('', false);
+      document.getElementById('nextQuestion').disabled = true;
+
+      // スコアサマリー
+      const pct = Math.round((correctCount / totalCount) * 100);
+      const isGood = pct >= 70;
+      const summaryEl = document.getElementById('scoreSummary');
+      summaryEl.className = isGood ? 'score-summary' : 'score-summary score-bad';
+      summaryEl.innerHTML = `
+        <div class="score-summary-label">最終スコア</div>
+        <div class="score-summary-value">${correctCount} <span style="font-size:0.55em;font-weight:500">/ ${totalCount}</span></div>
+        <div class="score-summary-sub">正答率 ${pct}%</div>
+      `;
+      summaryEl.classList.remove('hidden');
+
+      // 不正解カード
       if (sub_incorrectWords.length > 0) {
-        const incorrectList = sub_incorrectWords.map(w => `${w.word} - ${w.meaning}`).join('<br>');
-        document.getElementById('incorrectWords').innerHTML = `<h2>不正解だった単語</h2><br>${incorrectList}`;
+        // localStorage に保存（おさらいモードの時は上書き更新）
+        const existing = isReviewMode ? [] : loadIncorrectWords();
+        saveIncorrectWords(existing.concat(sub_incorrectWords));
+
+        const sectionEl = document.getElementById('incorrectSection');
+        sectionEl.innerHTML = `
+          <div class="result-header">
+            <span class="result-header-icon">📝</span>
+            <span class="result-title">間違えた単語</span>
+            <span class="result-count-badge">${sub_incorrectWords.length}語</span>
+          </div>
+          <div class="incorrect-cards" id="incorrectCardList"></div>
+        `;
+        sectionEl.classList.remove('hidden');
+
+        const cardList = document.getElementById('incorrectCardList');
+        sub_incorrectWords.forEach((w, i) => {
+          const card = document.createElement('div');
+          card.className = 'incorrect-card';
+          card.style.animationDelay = `${i * 60}ms`;
+          card.innerHTML = `
+            <span class="incorrect-card-word">${w.word}</span>
+            <span class="incorrect-card-divider">→</span>
+            <span class="incorrect-card-meaning">${w.meaning}</span>
+          `;
+          cardList.appendChild(card);
+        });
+      } else {
+        // 全問正解：おさらいモードなら消す
+        if (isReviewMode) {
+          saveIncorrectWords([]);
+        }
+        const sectionEl = document.getElementById('incorrectSection');
+        sectionEl.innerHTML = `
+          <div class="result-header">
+            <span class="result-header-icon">🎉</span>
+            <span class="result-title" style="color:#2e7d32">全問正解！素晴らしい！</span>
+          </div>
+        `;
+        sectionEl.classList.remove('hidden');
       }
       return;
     }
+
     const current = practiceWords[currentQuestionIndex];
     currentQuestionType = current.questionType;
-    
-    // 問題の種類によって表示を変更
+
     let questionText, correctAnswer, allChoices;
-    
     if (currentQuestionType === 'word') {
-      // 英語→日本語
       questionText = current.word;
       correctAnswer = current.meaning;
       allChoices = words.map(w => w.meaning);
     } else {
-      // 日本語→英語
       questionText = current.meaning;
       correctAnswer = current.word;
       allChoices = words.map(w => w.word);
     }
-    
+
     currentCorrectAnswer = correctAnswer;
     document.getElementById('questionWord').innerHTML = questionText;
 
-    // 選択肢を作成
     let options = [correctAnswer];
     while (options.length < 4) {
       let rand = allChoices[Math.floor(Math.random() * allChoices.length)];
@@ -690,18 +883,13 @@
       const btn = document.createElement('button');
       btn.textContent = opt;
       btn.onclick = () => {
-        // すべてのボタンを無効化
         Array.from(choicesDiv.children).forEach(b => b.disabled = true);
-        
-        // 正解のボタンを黄色に
         Array.from(choicesDiv.children).forEach(b => {
-          if (b.textContent === correctAnswer) {
-            b.classList.add('correct-answer');
-          }
+          if (b.textContent === correctAnswer) b.classList.add('correct-answer');
         });
 
         if (opt === correctAnswer) {
-          setAnswerFeedback("正解！", true);
+          setAnswerFeedback('正解！', true);
           document.body.className = 'correct-bg';
           correctCount++;
           document.getElementById('correctCount').textContent = correctCount;
@@ -726,6 +914,11 @@
       document.getElementById('currentQuestionIndex').textContent = currentQuestionIndex + 1;
     }
   }
+
+  // ─────────────────────────────────────────
+  //  初期化
+  // ─────────────────────────────────────────
+  updateReviewBadge();
 </script>
 
 </body>
