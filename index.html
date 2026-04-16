@@ -35,6 +35,7 @@
     button:hover { background-color:#5568d3; transform:translateY(-2px); box-shadow:0 4px 12px rgba(102,126,234,.4); }
     button:active { transform:translateY(0); }
     button:disabled { background-color:#ccc; cursor:not-allowed; transform:none; box-shadow:none; }
+    .redButton { border-radius:8px; background-color:#fa8072; color:black; transition:all .3s ease; font-weight:500; }
 
     .hidden { display:none; }
     .word { font-size:2.2em; margin:30px 0; color:#333; font-weight:bold; text-align:center; }
@@ -151,9 +152,9 @@
     <div id="sectionList"></div>
     <div class="button-group">
       <button onclick="startSelectedMode()">スタート</button><br>
-      <button onclick="backToLevelMenu()">レベル選択に戻る</button>
-      <button onclick="clearAllSelections()">選択を全削除</button>
       <button onclick="selectAllSections()">すべて選択</button>
+      <button onclick="clearAllSelections()" class="redButton">選択を全削除</button><br>
+      <button onclick="backToLevelMenu()">レベル選択に戻る</button>
     </div>
   </div>
 
