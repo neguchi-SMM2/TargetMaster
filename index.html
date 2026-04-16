@@ -621,7 +621,6 @@
 
   function updateReviewBadge() {
     const list = loadIncorrectWords();
-    generate_levelList();
     document.getElementById('reviewBadge').textContent = list.length;
   }
 
@@ -734,6 +733,7 @@
     document.getElementById('levelMenu').classList.remove('hidden');
     document.getElementById('levelModeTitle').textContent =
       mode === 'memorize' ? '暗記モード - レベル選択' : '実践モード - レベル選択';
+    generate_levelList();
   }
 
   // おさらい確認画面を表示
@@ -808,6 +808,7 @@
     document.getElementById('levelMenu').classList.remove('hidden');
     document.getElementById('sectionMenu').classList.add('hidden');
     sectionSelections = {};
+    generate_levelList();
   }
 
   function backToSectionMenu() {
