@@ -621,6 +621,7 @@
 
   function updateReviewBadge() {
     const list = loadIncorrectWords();
+    generate_levelList();
     document.getElementById('reviewBadge').textContent = list.length;
   }
 
