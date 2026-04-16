@@ -610,7 +610,7 @@
       correct: 0,
       incorrect: 0,
       memorized: 0,
-      totalStdyTime: 0,
+      totalStudyTime: 0,
     };
   }
 
@@ -937,11 +937,9 @@
     }
     document.getElementById('nextButton').disabled = false;
     const current = filteredWords[memorizeIndex];
-    if (current.questionType === 'word') {
-      let stats = loadStats();
-      stats.memorized++;
-      saveStats(stats);
-    }
+    let stats = loadStats();
+    stats.memorized++;
+    saveStats(stats);
     document.getElementById('memorizeWord').innerHTML =
       memorizeStage === 'word' ? current.word : current.meaning;
   }
@@ -1077,6 +1075,13 @@
         `;
         sectionEl.classList.remove('hidden');
       }
+      if (studyStartTime) {
+        const stats = loadStats();
+        const elapsed = Math.floor((Date.now() - studyStartTime) / 1000);
+        stats.totalStudyTime += elapsed;
+        saveStats(stats);
+        studyStartTime = null;
+      }
       return;
     }
 
@@ -1134,16 +1139,6 @@
       };
       choicesDiv.appendChild(btn);
     });
-
-    if (currentQuestionIndex >= practiceWords.length) {
-      if (studyStartTime) {
-        const stats = loadStats();
-        const elapsed = Math.floor((Date.now() - studyStartTime) / 1000);
-        stats.totalStudyTime += elapsed;
-        saveStats(stats);
-        studyStartTime = null;
-      }
-    }
   }
 
   function nextQuestion() {
