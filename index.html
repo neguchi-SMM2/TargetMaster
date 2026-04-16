@@ -676,16 +676,19 @@
   }
 
   function generate_levelList() {
-    const levelMenu = document.getElementById('menu');
+    const levelMenu = document.querySelector('#levelMenu .menu');
     levelMenu.innerHTML = '';
+  
     for (let lvl = 1; lvl <= levelCount; lvl++) {
       const button = document.createElement('button');
       button.onclick = () => chooseLevel(lvl);
       button.textContent = `Level ${lvl}`;
+  
+      levelMenu.appendChild(button);
+  
       if (lvl % 2 === 0) {
         levelMenu.appendChild(document.createElement('br'));
       }
-      levelMenu.appendChild(button);
     }
   }
 
