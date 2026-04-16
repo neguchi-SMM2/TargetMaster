@@ -734,6 +734,7 @@
       return;
     } else if (isStatsMode) {
       document.getElementById('modeMenu').classList.add('hidden');
+      document.getElementById('statsMenu').classList.remove('hidden');
       showStats();
       return;
     }
@@ -1098,7 +1099,7 @@
           sub_incorrectWords.push(current);
           document.body.className = 'incorrect-bg';
         }
-        save_Stats(Stats);
+        saveStats(stats);
         document.getElementById('nextQuestion').disabled = false;
       };
       choicesDiv.appendChild(btn);
