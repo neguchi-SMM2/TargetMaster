@@ -894,6 +894,10 @@
   let currentQuestionType = 'word';
 
   function startPractice() {
+    if (isReviewMode) {
+      filteredWords = loadIncorrectWords();
+    }
+
     sub_incorrectWords = [];
 
     const shuffle = document.getElementById('shuffleOption').checked;
@@ -989,7 +993,7 @@
         sectionEl.innerHTML = `
           <div class="result-header">
             <span class="result-header-icon">🎉</span>
-            <span class="result-title" style="color:#2e7d32">全問正解！素晴らしい！</span>
+            <span class="result-title" style="color:#2e7d32">全問正解！おめでとう！</span>
           </div>
         `;
         sectionEl.classList.remove('hidden');
