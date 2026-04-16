@@ -588,6 +588,22 @@
     }
   }
 
+  const STATS_KEY = 'vocabmaster_stats';
+
+  function loadStats() {
+    const data = localStorage.getItem(STATS_KEY);
+    return data ? JSON.parse(data) : {
+      totalAnswered: 0,
+      correct: 0,
+      incorrect: 0,
+      memorized: 0
+    };
+  }
+
+  function saveStats(stats) {
+    localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+  }
+
   function saveIncorrectWords(list) {
     try {
       const unique = [];
@@ -864,6 +880,11 @@
     }
     document.getElementById('nextButton').disabled = false;
     const current = filteredWords[memorizeIndex];
+    if (current.questionType === 'word') {
+      let stats = loadStats();
+      stats.memorized++;
+      saveStats(stats);
+    }
     document.getElementById('memorizeWord').innerHTML =
       memorizeStage === 'word' ? current.word : current.meaning;
   }
@@ -1036,16 +1057,21 @@
           if (b.textContent === correctAnswer) b.classList.add('correct-answer');
         });
 
+        const stats = loadStats();
+        stats.totalAnswered++;
         if (opt === correctAnswer) {
+          stats.correct++;
           setAnswerFeedback('正解！', true);
           document.body.className = 'correct-bg';
           correctCount++;
           document.getElementById('correctCount').textContent = correctCount;
         } else {
+          stats.incorrect++;
           setAnswerFeedback(`不正解！正解は：${correctAnswer}`, false);
           sub_incorrectWords.push(current);
           document.body.className = 'incorrect-bg';
         }
+        save_Stats(Stats);
         document.getElementById('nextQuestion').disabled = false;
       };
       choicesDiv.appendChild(btn);
