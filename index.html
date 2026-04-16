@@ -486,14 +486,7 @@
   <div id="levelMenu" class="container hidden">
     <h2 id="levelModeTitle"></h2>
     <h3>レベルを選択してください</h3>
-    <div class="menu">
-      <button onclick="chooseLevel(1)">Level 1</button>
-      <button onclick="chooseLevel(2)">Level 2</button><br>
-      <button onclick="chooseLevel(3)">Level 3</button>
-      <button onclick="chooseLevel(4)">Level 4</button><br>
-      <button onclick="chooseLevel(5)">Level 5</button>
-      <button onclick="chooseLevel(6)">Level 6</button>
-    </div>
+    <div class="menu"></div>
     <div class="button-group">
       <button onclick="backToModeMenu()">モード選択に戻る</button>
     </div>
@@ -529,7 +522,7 @@
   <!-- おさらいモード確認画面 -->
   <div id="reviewConfirmMenu" class="container hidden">
     <h2>おさらいモード</h2>
-    <h3>📚 保存された間違い単語</h3>
+    <h3>📚 保存された間違い単語<div id="reviewWordList_num"></div></h3>
     <div class="review-word-list" id="reviewWordList"></div>
     <div class="button-group">
       <button class="btn-review" onclick="startReviewPractice()">おさらいスタート</button>
@@ -545,7 +538,7 @@
     <h2 id="practiceMenuTitle">実践モード設定</h2>
 
     <div class="practice-settings-section">
-      <div class="practice-settings-label">問題の方向</div>
+      <div class="practice-settings-label">問題形式</div>
       <div class="direction-selector">
         <button class="direction-btn" id="dirBtn-word"    onclick="setDirection('word')">英語 → 日本語</button>
         <button class="direction-btn" id="dirBtn-meaning" onclick="setDirection('meaning')">日本語 → 英語</button>
@@ -595,6 +588,7 @@
   //  永続ストレージ（localStorage）
   // ─────────────────────────────────────────
   const STORAGE_KEY = 'vocabmaster_incorrect_words';
+  const levelCount = 19;
 
   function loadIncorrectWords() {
     try {
@@ -702,6 +696,18 @@
     });
   }
 
+  function generate_levelList() {
+    const levelMenu = document.getElementById('levelMenu').querySelector('.menu');
+    levelMenu.innerHTML = '';
+    for (let lvl = 1; lvl <= levelCount; lvl++) {
+      const btn = document.createElement('button');
+      btn.textContent = `Level ${lvl}`;
+      btn.onclick = () => chooseLevel(lvl);
+      levelMenu.appendChild(btn);
+      if (lvl % 2 === 0) levelMenu.appendChild(document.createElement('br'));
+    }
+  }
+
   // ─────────────────────────────────────────
   //  画面遷移
   // ─────────────────────────────────────────
@@ -742,6 +748,7 @@
       listEl.appendChild(card);
     });
     document.getElementById('reviewConfirmMenu').classList.remove('hidden');
+    document.getElementById('reviewWordList_num').textContent = `(${savedWords.length}語)`;
   }
 
   // おさらいスタート（確認画面→設定画面）
