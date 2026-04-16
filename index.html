@@ -493,16 +493,15 @@
 
   <!-- セクション選択画面 -->
   <div id="sectionMenu" class="container hidden">
-    <div class="button-group">
-      <button onclick="backToLevelMenu()">レベル選択に戻る</button>
-      <button onclick="clearAllSelections()">選択を全削除</button>
-      <button onclick="selectAllSections()">すべて選択</button>
-    </div>
     <h2 id="selectedModeTitle"></h2>
     <h3>セクションを選択してください（複数可）</h3>
     <div id="sectionList"></div>
     <div class="button-group">
-      <button onclick="startSelectedMode()">スタート</button>
+      <button onclick="startSelectedMode()">スタート</button><br>
+      </br>
+      <button onclick="backToLevelMenu()">レベル選択に戻る</button><br>
+      <button onclick="clearAllSelections()">選択を全削除</button><br>
+      <button onclick="selectAllSections()">すべて選択</button>
     </div>
   </div>
 
@@ -514,6 +513,7 @@
       <button id="backButton" onclick="backMemorize()">前へ</button>
       <button id="nextButton" onclick="nextMemorize()">次へ</button>
       <br>
+      <button onclick="startReviewPractice()" id="reviewButton">おさらいする</button>
       <button onclick="backToSectionMenu()">セクション選択に戻る</button>
     </div>
   </div>
@@ -1023,6 +1023,7 @@
       document.getElementById('choices').innerHTML = '';
       setAnswerFeedback('', false);
       document.getElementById('nextQuestion').disabled = true;
+      document.getElementById('reviewButton').classList.remove('hidden');
 
       const pct = Math.round((correctCount / totalCount) * 100);
       const isGood = pct >= 70;
