@@ -697,14 +697,16 @@
   }
 
   function generate_levelList() {
-    const levelMenu = document.getElementById('levelMenu').querySelector('.menu');
+    const levelMenu = document.getElementById('menu');
     levelMenu.innerHTML = '';
     for (let lvl = 1; lvl <= levelCount; lvl++) {
-      const btn = document.createElement('button');
-      btn.textContent = `Level ${lvl}`;
-      btn.onclick = () => chooseLevel(lvl);
-      levelMenu.appendChild(btn);
-      if (lvl % 2 === 0) levelMenu.appendChild(document.createElement('br'));
+      const button = document.createElement('button');
+      button.onclick = () => chooseLevel(lvl);
+      button.textContent = `Level ${lvl}`;
+      if (lvl % 2 === 0) {
+        levelMenu.appendChild(document.createElement('br'));
+      }
+      levelMenu.appendChild(button);
     }
   }
 
