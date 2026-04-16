@@ -798,11 +798,10 @@
   }
 
   function goReviewPractice() {
-    document.getElementById('practiceMenu').classList.add('hidden');
     document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('practiceMenuTitle').textContent = 'おさらいモード設定';
     document.getElementById('practiceMenuBackBtn').textContent = 'おさらい確認に戻る';
-    document.getElementById('practiceQuestion').classList.remove('hidden');
+    document.getElementById('practiceMenu').classList.remove('hidden');
     updateReviewBadge();
     showPracticeQuestion();
   }
