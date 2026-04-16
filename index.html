@@ -444,6 +444,11 @@
       font-size: 1em;
     }
 
+    #statsContent .score-summary {
+      max-width: 400px;
+      font-size: 2.2em;
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 20px 15px;
@@ -528,6 +533,7 @@
     </div>
   </div>
 
+  <!-- 統計データ画面 -->
   <div id="statsMenu" class="container hidden">
     <h2>統計データ</h2>
     <div id="statsContent"></div>
@@ -816,7 +822,7 @@
 
   function backToModeMenu() {
     document.getElementById('modeMenu').classList.remove('hidden');
-    ['levelMenu','sectionMenu','memorizeMenu','practiceMenu','practiceQuestion','reviewConfirmMenu'].forEach(id => {
+    ['levelMenu','sectionMenu','memorizeMenu','practiceMenu','practiceQuestion','reviewConfirmMenu','statsMenu'].forEach(id => {
       document.getElementById(id).classList.add('hidden');
     });
     sectionSelections = {};
