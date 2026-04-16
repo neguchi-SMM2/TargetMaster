@@ -800,7 +800,7 @@
   function goReviewPractice() {
     document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('practiceMenuTitle').textContent = 'おさらいモード設定';
-    document.getElementById('practiceMenuBackBtn').textContent = 'おさらい確認に戻る';
+    document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
     document.getElementById('practiceMenu').classList.remove('hidden');
     updateReviewBadge();
     showPracticeQuestion();
@@ -874,6 +874,7 @@
 
   function backFromPracticeMenu() {
     document.getElementById('practiceMenu').classList.add('hidden');
+    document.getElementById('reviewButton').classList.add('hidden');
     if (isReviewMode) {
       document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
       document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
