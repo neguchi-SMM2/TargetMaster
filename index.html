@@ -473,6 +473,7 @@
         おさらいモード
         <span class="review-badge" id="reviewBadge">0</span>
       </button>
+      <button onclick="chooseMode('stats')">統計データ</button>
     </div>
   </div>
 
@@ -523,6 +524,14 @@
       <br>
       <button class="review-clear-btn" onclick="clearReviewWords()">リストをクリア</button>
       <br>
+      <button onclick="backToModeMenu()">モード選択に戻る</button>
+    </div>
+  </div>
+
+  <div id="statsMenu" class="container hidden">
+    <h2>統計データ</h2>
+    <div id="statsContent"></div>
+    <div class="button-group">
       <button onclick="backToModeMenu()">モード選択に戻る</button>
     </div>
   </div>
@@ -711,6 +720,7 @@
   function chooseMode(mode) {
     selectedMode = mode;
     isReviewMode = (mode === 'review');
+    isStatsMode = (mode === 'stats');
 
     if (isReviewMode) {
       const savedWords = loadIncorrectWords();
@@ -722,6 +732,10 @@
       document.getElementById('modeMenu').classList.add('hidden');
       showReviewConfirm(savedWords);
       return;
+    } else if (isStatsMode) {
+      document.getElementById('modeMenu').classList.add('hidden');
+      showStats();
+      return;
     }
 
     document.getElementById('modeMenu').classList.add('hidden');
@@ -729,6 +743,19 @@
     document.getElementById('levelModeTitle').textContent =
       mode === 'memorize' ? '暗記モード - レベル選択' : '実践モード - レベル選択';
     generate_levelList();
+  }
+
+  function showStats() {
+    const stats = loadStats();
+    const content = document.getElementById('statsContent');
+    content.innerHTML = `
+      <div class="score-summary ${stats.totalAnswered > 0 && stats.correct / stats.totalAnswered < 0.5 ? 'score-bad' : ''}">
+        <div class="score-summary-label">総回答数${stats.totalAnswered}</div><br>
+        正解した回数${stats.correct}<br>
+        間違えた回数${stats.incorrect}<br><br>
+        暗記した単語数${stats.memorized}</div>
+      </div>
+    `;
   }
 
   function showReviewConfirm(savedWords) {
