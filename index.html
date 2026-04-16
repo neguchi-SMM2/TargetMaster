@@ -239,9 +239,6 @@
   </div>
 
 <script>
-  // ─────────────────────────────────────────
-  //  永続ストレージ
-  // ─────────────────────────────────────────
   const STORAGE_KEY = 'vocabmaster_incorrect_words';
   const STATS_KEY   = 'vocabmaster_stats';
   const levelCount  = 19;
@@ -264,7 +261,6 @@
     } catch(e) { return list; }
   }
 
-  // ★ 正解した単語を間違いリストから即除外
   function removeFromIncorrectWords(wordObj) {
     const list = loadIncorrectWords();
     const filtered = list.filter(w => !(w.word === wordObj.word && w.meaning === wordObj.meaning));
@@ -284,33 +280,28 @@
     return Object.assign({ totalAnswered:0, correct:0, incorrect:0, memorized:0, totalStudyTime:0 }, loadStats());
   }
 
-  // ─────────────────────────────────────────
-  //  状態変数
-  // ─────────────────────────────────────────
-  let selectedMode       = '';
-  let selectedLevel      = 0;
-  let selectedSections   = [];
-  let filteredWords      = [];
-  let memorizeIndex      = 0;
-  let memorizeStage      = 'word';
-  let correctCount       = 0;
-  let totalCount         = 0;
-  let levelSections      = [];
-  let sectionSelections  = {};
-  let sub_incorrectWords = [];    // 今セッションで間違えた単語
-  let isReviewMode       = false; // おさらいモード（全蓄積単語）
-  let isSessionReview    = false; // 実践終了後のその場おさらい
-  let questionDirection  = 'both';
-  let studyStartTime     = null;
+  let selectedMode          = '';
+  let selectedLevel         = 0;
+  let selectedSections      = [];
+  let filteredWords         = [];
+  let originalFilteredWords = [];
+  let memorizeIndex         = 0;
+  let memorizeStage         = 'word';
+  let correctCount          = 0;
+  let totalCount            = 0;
+  let levelSections         = [];
+  let sectionSelections     = {};
+  let sub_incorrectWords    = [];
+  let isReviewMode          = false;
+  let isSessionReview       = false;
+  let questionDirection     = 'both';
+  let studyStartTime        = null;
 
   let practiceWords        = [];
   let currentQuestionIndex = 0;
   let currentCorrectAnswer = '';
   let currentQuestionType  = 'word';
 
-  // ─────────────────────────────────────────
-  //  UI ヘルパー
-  // ─────────────────────────────────────────
   function setDirection(dir) {
     questionDirection = dir;
     ['word','meaning','both'].forEach(d =>
@@ -332,9 +323,6 @@
     studyStartTime = null;
   }
 
-  // ─────────────────────────────────────────
-  //  レベル・セクション
-  // ─────────────────────────────────────────
   function getLevelSections(level) {
     const ranges = {
       1:[1,3],2:[4,6],3:[7,9],4:[10,12],5:[13,15],6:[16,18],
@@ -377,9 +365,6 @@
     }
   }
 
-  // ─────────────────────────────────────────
-  //  モード選択
-  // ─────────────────────────────────────────
   function chooseMode(mode) {
     selectedMode    = mode;
     isReviewMode    = (mode === 'review');
@@ -410,9 +395,6 @@
     generate_levelList();
   }
 
-  // ─────────────────────────────────────────
-  //  統計
-  // ─────────────────────────────────────────
   function showStats() {
     const s = getStats();
     const pct = s.totalAnswered ? Math.round(s.correct / s.totalAnswered * 100) : 0;
@@ -430,9 +412,6 @@
     return Math.floor(sec/3600) + '時間 ' + Math.floor((sec%3600)/60) + '分 ' + (sec%60) + '秒';
   }
 
-  // ─────────────────────────────────────────
-  //  おさらい確認画面
-  // ─────────────────────────────────────────
   function showReviewConfirm(savedWords) {
     const el = document.getElementById('reviewWordList');
     el.innerHTML = '';
@@ -464,9 +443,6 @@
     updateReviewBadge();
   }
 
-  // ─────────────────────────────────────────
-  //  画面遷移
-  // ─────────────────────────────────────────
   function chooseLevel(level) {
     selectedLevel  = level;
     levelSections  = getLevelSections(level);
@@ -513,7 +489,14 @@
 
   function backFromPracticeMenu() {
     document.getElementById('practiceMenu').classList.add('hidden');
-    if (isReviewMode) {
+    if (isSessionReview) {
+      isSessionReview = false;
+      isReviewMode    = false;
+      filteredWords   = originalFilteredWords.slice();
+      document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
+      document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
+      document.getElementById('sectionMenu').classList.remove('hidden');
+    } else if (isReviewMode) {
       const saved = loadIncorrectWords();
       if (saved.length) {
         showReviewConfirm(saved);
@@ -530,10 +513,11 @@
     document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('reviewButton').classList.add('hidden');
     document.body.className = '';
-    // セッションおさらい終了後は通常実践モードの設定画面へ戻す
+
     if (isSessionReview) {
       isSessionReview = false;
       isReviewMode    = false;
+      filteredWords   = originalFilteredWords.slice();
       document.getElementById('practiceMenuTitle').textContent = '実践モード設定';
       document.getElementById('practiceMenuBackBtn').textContent = 'セクション選択に戻る';
     } else if (isReviewMode) {
@@ -564,9 +548,6 @@
     }
   }
 
-  // ─────────────────────────────────────────
-  //  暗記モード
-  // ─────────────────────────────────────────
   function startMemorize() {
     studyStartTime = Date.now();
     document.getElementById('sectionMenu').classList.add('hidden');
@@ -602,11 +583,6 @@
     showMemorize();
   }
 
-  // ─────────────────────────────────────────
-  //  実践 / おさらい 共通ロジック
-  // ─────────────────────────────────────────
-
-  // 問題リスト構築
   function buildPracticeWords(wordList) {
     const arr = [];
     if (questionDirection === 'word'    || questionDirection === 'both') wordList.forEach(w => arr.push(Object.assign({}, w, {questionType:'word'})));
@@ -614,7 +590,6 @@
     return arr;
   }
 
-  // 共通スタート処理
   function launchPractice(wordList, shuffle) {
     sub_incorrectWords   = [];
     practiceWords        = buildPracticeWords(wordList);
@@ -641,37 +616,38 @@
     showPracticeQuestion();
   }
 
-  // 設定画面「スタート」
   function startPractice() {
-    if (isReviewMode) filteredWords = loadIncorrectWords(); // 最新を取得
+    if (isReviewMode && !isSessionReview) filteredWords = loadIncorrectWords();
     launchPractice(filteredWords, document.getElementById('shuffleOption').checked);
   }
 
-  // ★ 実践終了後「この問題だけおさらいする」
   function goReviewPractice() {
     if (!sub_incorrectWords.length) return;
 
-    // 今セッションの間違い単語（重複排除）だけを対象にする
     const seen = new Set();
     const sessionWords = sub_incorrectWords.filter(w => {
       const k = w.word + '||' + w.meaning;
       return seen.has(k) ? false : (seen.add(k), true);
     });
 
+    if (!isSessionReview) {
+      originalFilteredWords = filteredWords.slice();
+    }
+
     isSessionReview = true;
     isReviewMode    = false;
     filteredWords   = sessionWords;
 
-    // 設定画面スキップ、常にシャッフルで即スタート
-    launchPractice(filteredWords, true);
+    document.getElementById('practiceQuestion').classList.add('hidden');
+    document.getElementById('reviewButton').classList.add('hidden');
+    document.getElementById('practiceMenuTitle').textContent = 'おさらい設定（今回の間違い ' + sessionWords.length + '語）';
+    document.getElementById('practiceMenuBackBtn').textContent = '結果に戻る';
+    document.getElementById('practiceMenu').classList.remove('hidden');
+    document.body.className = '';
   }
 
-  // ─────────────────────────────────────────
-  //  問題表示
-  // ─────────────────────────────────────────
   function showPracticeQuestion() {
     if (currentQuestionIndex >= practiceWords.length) {
-      // ── 全問終了 ──
       document.getElementById('questionWord').innerHTML = '全問終了！';
       document.getElementById('choices').innerHTML = '';
       setAnswerFeedback('', false);
@@ -688,17 +664,13 @@
         '<div class="score-summary-sub">正答率 ' + pct + '%</div>';
       summaryEl.classList.remove('hidden');
 
-      // 間違えた単語の処理
       if (sub_incorrectWords.length > 0) {
-        // ★ 保存：おさらいモードは今回の間違いで上書き、それ以外は追記
-        //   （正解した単語は removeFromIncorrectWords で既に除外済み）
         if (isReviewMode) {
           saveIncorrectWords(sub_incorrectWords);
         } else {
           saveIncorrectWords(loadIncorrectWords().concat(sub_incorrectWords));
         }
 
-        // 不正解カード表示
         const sectionEl = document.getElementById('incorrectSection');
         sectionEl.innerHTML =
           '<div class="result-header">' +
@@ -721,17 +693,13 @@
           cardList.appendChild(card);
         });
 
-        // ★ セッションおさらー中は「この問題だけおさらいする」を出さない（無限ループ防止）
-        if (!isSessionReview) {
-          document.getElementById('reviewButton').classList.remove('hidden');
-        }
+        document.getElementById('reviewButton').classList.remove('hidden');
       } else {
-        // 全問正解
         const sectionEl = document.getElementById('incorrectSection');
         sectionEl.innerHTML =
           '<div class="result-header">' +
             '<span class="result-header-icon">🎉</span>' +
-            '<span class="result-title" style="color:#2e7d32">全問正解！素晴らしい！</span>' +
+            '<span class="result-title" style="color:#2e7d32">Congratulations! You got them all right!</span>' +
           '</div>';
         sectionEl.classList.remove('hidden');
       }
@@ -781,7 +749,6 @@
           document.body.className = 'correct-bg';
           correctCount++;
           document.getElementById('correctCount').textContent = correctCount;
-          // ★ 正解 → 間違いリストから除外
           removeFromIncorrectWords(current);
         } else {
           s.incorrect++;
@@ -807,9 +774,6 @@
     showPracticeQuestion();
   }
 
-  // ─────────────────────────────────────────
-  //  初期化
-  // ─────────────────────────────────────────
   updateReviewBadge();
 </script>
 
