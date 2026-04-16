@@ -584,7 +584,7 @@
     <div class="button-group">
       <button id="nextQuestion" onclick="nextQuestion()">次へ</button></br>
       </br>
-      <button onclick="startReviewPractice()" id="reviewButton" class="hidden">おさらいする</button>
+      <button onclick="goReviewPractice()" id="reviewButton" class="hidden">おさらいする</button>
       <button id="backFromQuestionBtn" onclick="backFromQuestion()">メニューに戻る</button>
     </div>
   </div>
@@ -792,10 +792,19 @@
 
   function startReviewPractice() {
     document.getElementById('reviewConfirmMenu').classList.add('hidden');
-    document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('practiceMenuTitle').textContent = 'おさらいモード設定';
     document.getElementById('practiceMenuBackBtn').textContent = 'おさらい確認に戻る';
     document.getElementById('practiceMenu').classList.remove('hidden');
+  }
+
+  function goReviewPractice() {
+    document.getElementById('practiceMenu').classList.add('hidden');
+    document.getElementById('practiceQuestion').classList.add('hidden');
+    document.getElementById('practiceMenuTitle').textContent = 'おさらいモード設定';
+    document.getElementById('practiceMenuBackBtn').textContent = 'おさらい確認に戻る';
+    document.getElementById('practiceQuestion').classList.remove('hidden');
+    updateReviewBadge();
+    showPracticeQuestion();
   }
 
   function clearReviewWords() {
