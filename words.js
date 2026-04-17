@@ -4198,6 +4198,858 @@ const words = [
     meaning: "前へ, 先へ",
     page: 198,
     section: 21
+  },
+  {
+    word: "possess",
+    meaning: "を所有している",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "dominate",
+    meaning: "を支配する",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "guarantee",
+    meaning: "を保証する",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "melt",
+    meaning: "溶ける",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "embarrass",
+    meaning: "に恥ずかしい思いをさせる",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "discourage",
+    meaning: "(人)にやる気を無くさせる",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "detect",
+    meaning: "を感知する",
+    page: 200,
+    section: 22
+  },
+  {
+    word: "devote",
+    meaning: "をささげる",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "urge",
+    meaning: "に(強く)促す",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "lend",
+    meaning: "を貸す",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "restrict",
+    meaning: "を制限する",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "isolate",
+    meaning: "を孤立させる",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "accompany",
+    meaning: "に同行する",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "exhaust",
+    meaning: "を疲れ果てさせる",
+    page: 202,
+    section: 22
+  },
+  {
+    word: "annoy",
+    meaning: "を悩ます",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "endanger",
+    meaning: "を危険に晒す",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "acknowledge",
+    meaning: "(事実など)を認める",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "admire",
+    meaning: "に敬服(関心)する",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "evaluate",
+    meaning: "を評価する",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "declare",
+    meaning: "を宣言する",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "secure",
+    meaning: "を確保する",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "specialize",
+    meaning: "専門とする",
+    page: 204,
+    section: 22
+  },
+  {
+    word: "attribute",
+    meaning: "(結果など)を帰する",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "pretend",
+    meaning: "(の)ふりをする",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "bury",
+    meaning: "を埋める",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "reverse",
+    meaning: "を逆転させる",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "resist",
+    meaning: "に抵抗する",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "scare",
+    meaning: "を怯えさせる",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "imitate",
+    meaning: "をまねる",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "assist",
+    meaning: "(を)援助する",
+    page: 206,
+    section: 22
+  },
+  {
+    word: "resemble",
+    meaning: "に似ている",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "retire",
+    meaning: "引退する, 退職する",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "neglect",
+    meaning: "をおろそかにする, 怠る",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "collapse",
+    meaning: "崩壊する",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "reform",
+    meaning: "を改革する",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "protest",
+    meaning: "に抗議する",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "owe",
+    meaning: "に借りがある",
+    page: 208,
+    section: 22
+  },
+  {
+    word: "sustain",
+    meaning: "を持続させる",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "assign",
+    meaning: "を割り当てる",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "accomplish",
+    meaning: "を成し遂げる",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "wisdom",
+    meaning: "知恵",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "literacy",
+    meaning: "読み書きの能力",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "heritage",
+    meaning: "遺産",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "mission",
+    meaning: "使命",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "license",
+    meaning: "免許(証)",
+    page: 210,
+    section: 23
+  },
+  {
+    word: "elite",
+    meaning: "エリート",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "layer",
+    meaning: "層",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "motor",
+    meaning: "モーター",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "protein",
+    meaning: "タンパク質",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "profession",
+    meaning: "職業",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "editor",
+    meaning: "編集者",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "agent",
+    meaning: "仲介者, 代理人",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "globe",
+    meaning: "地球, 世界",
+    page: 212,
+    section: 23
+  },
+  {
+    word: "haven",
+    meaning: "避難所, 保護区",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "row",
+    meaning: "列",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "sacrifice",
+    meaning: "犠牲",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "means",
+    meaning: "手段",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "session",
+    meaning: "集まり",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "league",
+    meaning: "(競技)連盟",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "contest",
+    meaning: "競技(会)",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "guard",
+    meaning: "警備員",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "opponent",
+    meaning: "(試合・論争などの)相手",
+    page: 214,
+    section: 23
+  },
+  {
+    word: "glance",
+    meaning: "ちらっと見ること",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "divorce",
+    meaning: "離婚",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "tissue",
+    meaning: "(生物の)組織",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "liquid",
+    meaning: "液体",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "inequality",
+    meaning: "不平等",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "prejudice",
+    meaning: "偏見",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "justice",
+    meaning: "公正, 正義",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "guideline",
+    meaning: "指針, ガイドライン",
+    page: 216,
+    section: 23
+  },
+  {
+    word: "platform",
+    meaning: "プラットフォーム",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "sector",
+    meaning: "(社会・経済などの)部門",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "channel",
+    meaning: "チャンネル",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "glacier",
+    meaning: "氷河",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "primate",
+    meaning: "霊長目の動物",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "usage",
+    meaning: "(使)用法",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "fortune",
+    meaning: "財産",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "correlation",
+    meaning: "相互関係, 相関(関係)",
+    page: 218,
+    section: 23
+  },
+  {
+    word: "artistic",
+    meaning: "芸術的な",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "literary",
+    meaning: "文学の",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "classic",
+    meaning: "第一級の",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "liberal",
+    meaning: "自由主義の",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "concrete",
+    meaning: "具体的な",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "slight",
+    meaning: "わずかな",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "federal",
+    meaning: "連邦(政府)の",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "primitive",
+    meaning: "原始的な",
+    page: 220,
+    section: 24
+  },
+  {
+    word: "unfamiliar",
+    meaning: "不慣れな",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "subtle",
+    meaning: "微妙な",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "plain",
+    meaning: "明らかな",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "marine",
+    meaning: "海の",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "apparent",
+    meaning: "明白な",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "reluctant",
+    meaning: "気が進まない, 嫌がる",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "temporary",
+    meaning: "一時的な",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "guilty",
+    meaning: "罪悪感のある",
+    page: 222,
+    section: 24
+  },
+  {
+    word: "royal",
+    meaning: "王の",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "pure",
+    meaning: "純粋な",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "incredible",
+    meaning: "信じられない",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "eager",
+    meaning: "熱望して",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "adequate",
+    meaning: "十分な",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "via",
+    meaning: "〜経由で",
+    page: 224,
+    section: 24
+  },
+  {
+    word: "assess",
+    meaning: "を評価する",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "approve",
+    meaning: "賛成する",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "remark",
+    meaning: "と述べる",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "pose",
+    meaning: "危険を引き起こす",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "yield",
+    meaning: "をもたらす",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "exhibit",
+    meaning: "を示す, 見せる",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "distribute",
+    meaning: "を分配する",
+    page: 228,
+    section: 25
+  },
+  {
+    word: "command",
+    meaning: "を命じる",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "occupy",
+    meaning: "(空間・時間)を占める",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "pop",
+    meaning: "ひょいと動く",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "pile",
+    meaning: "を積み重ねる",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "greet",
+    meaning: "に挨拶する",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "apologine",
+    meaning: "謝る",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "frustrate",
+    meaning: "を苛立たせる",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "relieve",
+    meaning: "を和らげる",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "derive",
+    meaning: "由来する",
+    page: 230,
+    section: 25
+  },
+  {
+    word: "deserve",
+    meaning: "に値する",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "peer",
+    meaning: "じっと見る",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "defeat",
+    meaning: "を負かす",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "convert",
+    meaning: "を変える",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "wed",
+    meaning: "と結婚する",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "delight",
+    meaning: "を喜ばせる",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "boost",
+    meaning: "を押し上げる",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "endure",
+    meaning: "に耐える",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "correspond",
+    meaning: "一致する",
+    page: 232,
+    section: 25
+  },
+  {
+    word: "impose",
+    meaning: "を課す",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "rescue",
+    meaning: "を救う",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "resolve",
+    meaning: "を解決する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "register",
+    meaning: "を記録する, 登録する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "interrupt",
+    meaning: "を中断する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "rid",
+    meaning: "から取り除く, 除去する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "prohibit",
+    meaning: "を禁止する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "compose",
+    meaning: "を構成する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "misunderstand",
+    meaning: "を誤解する",
+    page: 234,
+    section: 25
+  },
+  {
+    word: "punish",
+    meaning: "を罰する",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "ruin",
+    meaning: "をダメにする",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "defend",
+    meaning: "を防御する",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "embrace",
+    meaning: "を受け入れる",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "modify",
+    meaning: "を修正する",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "qualify",
+    meaning: "人に資格を与える",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "passion",
+    meaning: "情熱",
+    page: 236,
+    section: 25
+  },
+  {
+    word: "enthusiasm",
+    meaning: "情熱, 熱意",
+    page: 236,
+    section: 25
   }
 ];
 
@@ -4225,5 +5077,8 @@ const sectionNames = {
   21: "21, 194~198",
   22: "22, 200~208",
   23: "23, 210~218",
-  24: "24, 220~224"
+  24: "24, 220~224",
+  25: "25, 228~236",
+  26: "26, 238~246",
+  27: "27, 248~250"
 };
