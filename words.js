@@ -5050,6 +5050,354 @@ const words = [
     meaning: "情熱, 熱意",
     page: 236,
     section: 25
+  },
+  {
+    word: "phase",
+    meaning: "段階, 局面",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "mode",
+    meaning: "方式",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "span",
+    meaning: "期間",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "gravity",
+    meaning: "重力, 引力",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "orbit",
+    meaning: "軌道",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "asteroid",
+    meaning: "小惑星",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "core",
+    meaning: "核心",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "soul",
+    meaning: "精神",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "nerve",
+    meaning: "神経",
+    page: 238,
+    section: 26
+  },
+  {
+    word: "infection",
+    meaning: "感染症",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "mall",
+    meaning: "モール, ショッピングセンター",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "grocery",
+    meaning: "食料雑貨",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "humor",
+    meaning: "ユーモア",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "instinct",
+    meaning: "本能",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "faith",
+    meaning: "信頼",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "courage",
+    meaning: "勇気",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "incentive",
+    meaning: "動機(づけ)",
+    page: 240,
+    section: 26
+  },
+  {
+    word: "prospect",
+    meaning: "見込み",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "obstacle",
+    meaning: "障害物",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "architecture",
+    meaning: "建築",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "stem",
+    meaning: "(草木の)茎, 幹",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "illusion",
+    meaning: "錯覚, 思い違い",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "discrimination",
+    meaning: "差別",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "shame",
+    meaning: "恥",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "drought",
+    meaning: "干ばつ",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "flavor",
+    meaning: "風味",
+    page: 242,
+    section: 26
+  },
+  {
+    word: "portion",
+    meaning: "部分",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "recipe",
+    meaning: "調理法",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "luxury",
+    meaning: "贅沢品",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "chip",
+    meaning: "小片, 破片",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "ritual",
+    meaning: "儀式",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "sake",
+    meaning: "のために, の目的で",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "prefecture",
+    meaning: "(日本の)県, 府",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "council",
+    meaning: "(地方)議会",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "administration",
+    meaning: "管理(部)",
+    page: 244,
+    section: 26
+  },
+  {
+    word: "curriculum",
+    meaning: "教育課程",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "precious",
+    meaning: "貴重な",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "generous",
+    meaning: "寛大な",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "casual",
+    meaning: "何気ない",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "optimistic",
+    meaning: "楽観的な",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "rough",
+    meaning: "粗い",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "unpleasant",
+    meaning: "不愉快な",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "Arctic",
+    meaning: "北極の",
+    page: 246,
+    section: 26
+  },
+  {
+    word: "ultimate",
+    meaning: "究極の",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "deaf",
+    meaning: "耳が聞こえない",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "genuine",
+    meaning: "本物の",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "manual",
+    meaning: "体(手)を使う",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "mechanical",
+    meaning: "機械の",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "instant",
+    meaning: "即時の, すぐの",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "spare",
+    meaning: "余分の, 予備の",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "immune",
+    meaning: "免疫を持つ",
+    page: 248,
+    section: 27
+  },
+  {
+    word: "harsh",
+    meaning: "厳しい",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "collective",
+    meaning: "集団の, 共同の",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "inevitable",
+    meaning: "避けられない",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "profound",
+    meaning: "重大な",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "steady",
+    meaning: "着実な, 一定の",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "mature",
+    meaning: "成熟した",
+    page: 250,
+    section: 27
+  },
+  {
+    word: "likewise",
+    meaning: "同様に",
+    page: 250,
+    section: 27
   }
 ];
 
