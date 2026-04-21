@@ -223,6 +223,7 @@
       <button id="reviewButton" class="btn-session-review hidden" onclick="goReviewPractice()">
         📝 この問題だけおさらいする
       </button>
+      <br>
       <button id="backFromQuestionBtn" onclick="backFromQuestion()">メニューに戻る</button>
     </div>
   </div>
@@ -707,7 +708,7 @@
         sectionEl.innerHTML =
           '<div class="result-header">' +
             '<span class="result-header-icon">🎉</span>' +
-            '<span class="result-title" style="color:#2e7d32">全問正解！素晴らしい！</span>' +
+            '<span class="result-title" style="color:#2e7d32">Congratulations! You got all answers correct!</span>' +
           '</div>';
         sectionEl.classList.remove('hidden');
       }
