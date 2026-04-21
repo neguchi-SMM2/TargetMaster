@@ -236,6 +236,7 @@
       <button id="reviewButton" class="btn-session-review hidden" onclick="goReviewPractice()">
         📝 この問題だけおさらいする
       </button>
+      <br>
       <button id="backFromQuestionBtn" onclick="backFromQuestion()">メニューに戻る</button>
     </div>
   </div>
@@ -490,6 +491,8 @@
   }
 
   function backFromPracticeMenu() {
+    // 設定画面に戻る際も念のためフラッシュ（通常は0秒だが安全のため）
+    flushStudyTime();
     document.getElementById('practiceMenu').classList.add('hidden');
     if (isSessionReview) {
       isSessionReview = false;
@@ -512,6 +515,10 @@
   }
 
   function backFromQuestion() {
+    // ★ 中断時：経過時間と間違い単語を保存
+    flushStudyTime();
+    saveCurrentIncorrectWords();
+
     document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('reviewButton').classList.add('hidden');
     document.body.className = '';
