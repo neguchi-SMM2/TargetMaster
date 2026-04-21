@@ -35,9 +35,7 @@
     button:hover { background-color:#5568d3; transform:translateY(-2px); box-shadow:0 4px 12px rgba(102,126,234,.4); }
     button:active { transform:translateY(0); }
     button:disabled { background-color:#ccc; cursor:not-allowed; transform:none; box-shadow:none; }
-    .redButton { border-radius:8px; background-color:#fa8072; color:white; transition:all .3s ease; font-weight:500; }
-    .redButton:hover {background-color:#f15341; transform:translateY(-2px); box-shadow:0 4px 12px rgba(241,83,65,.4); }
-    
+
     .hidden { display:none; }
     .word { font-size:2.2em; margin:30px 0; color:#333; font-weight:bold; text-align:center; }
 
@@ -62,12 +60,10 @@
     .checkbox-container { text-align:center; margin:20px 0; font-size:1.1em; }
     .checkbox-container input[type="checkbox"] { width:18px; height:18px; margin-right:8px; vertical-align:middle; cursor:pointer; }
 
-    /* おさらいボタン */
     .btn-review { background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%); }
     .btn-review:hover { background:linear-gradient(135deg,#d97fe0 0%,#d84560 100%); box-shadow:0 4px 12px rgba(245,87,108,.4); }
     .review-badge { display:inline-block; background:#fff; color:#f5576c; border-radius:12px; font-size:.75em; font-weight:700; padding:2px 8px; margin-left:8px; vertical-align:middle; }
 
-    /* おさらい確認画面 */
     .review-word-list { margin:16px 0; max-height:380px; overflow-y:auto; display:flex; flex-direction:column; gap:8px; }
     .review-word-card { background:linear-gradient(135deg,#fdf4ff 0%,#fce4ec 100%); border:1.5px solid #f8bbd0; border-left:4px solid #f5576c; border-radius:10px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center; gap:10px; font-size:.98em; }
     .review-word-card-en { font-weight:700; color:#b71c1c; }
@@ -75,7 +71,6 @@
     .review-clear-btn { background:#ff6b6b !important; }
     .review-clear-btn:hover { background:#ee5a52 !important; box-shadow:0 4px 12px rgba(255,107,107,.4) !important; }
 
-    /* 設定画面 */
     .practice-settings-section { background:#f8f9fa; border-radius:10px; padding:14px 16px; margin:12px 0; }
     .practice-settings-label { font-size:.9em; color:#888; font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; text-align:center; }
     .direction-selector { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin:16px 0; }
@@ -83,7 +78,6 @@
     .direction-btn:hover { border-color:#667eea; background:#eef0fd; color:#667eea; transform:translateY(-1px); box-shadow:none; }
     .direction-btn.selected { border-color:#667eea; background:#667eea; color:white; box-shadow:0 3px 10px rgba(102,126,234,.35); }
 
-    /* 結果画面 */
     .result-section { margin-top:28px; }
     .result-header { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:16px; }
     .result-header-icon { font-size:1.4em; }
@@ -105,7 +99,6 @@
 
     #statsContent .score-summary { font-size:1.1em; line-height:2; }
 
-    /* セッションおさらいボタン */
     .btn-session-review { background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%); font-size:1.05em; padding:13px 28px; }
     .btn-session-review:hover { background:linear-gradient(135deg,#d97fe0 0%,#d84560 100%); box-shadow:0 4px 12px rgba(245,87,108,.4); }
 
@@ -121,7 +114,6 @@
 </head>
 <body>
 
-  <!-- モード選択画面 -->
   <div id="modeMenu" class="container">
     <h1>英単語学習</h1>
     <h2>モードを選択してください</h2>
@@ -136,7 +128,6 @@
     </div>
   </div>
 
-  <!-- レベル選択画面 -->
   <div id="levelMenu" class="container hidden">
     <h2 id="levelModeTitle"></h2>
     <h3>レベルを選択してください</h3>
@@ -146,20 +137,18 @@
     </div>
   </div>
 
-  <!-- セクション選択画面 -->
   <div id="sectionMenu" class="container hidden">
     <h2 id="selectedModeTitle"></h2>
     <h3>セクションを選択してください（複数可）</h3>
     <div id="sectionList"></div>
     <div class="button-group">
       <button onclick="startSelectedMode()">スタート</button><br>
-      <button onclick="selectAllSections()">すべて選択</button>
-      <button onclick="clearAllSelections()" class="redButton">選択を全削除</button><br>
       <button onclick="backToLevelMenu()">レベル選択に戻る</button>
+      <button onclick="clearAllSelections()">選択を全削除</button>
+      <button onclick="selectAllSections()">すべて選択</button>
     </div>
   </div>
 
-  <!-- 暗記モード画面 -->
   <div id="memorizeMenu" class="container hidden">
     <h2>暗記モード</h2>
     <div class="word" id="memorizeWord"></div>
@@ -171,7 +160,6 @@
     </div>
   </div>
 
-  <!-- おさらいモード確認画面 -->
   <div id="reviewConfirmMenu" class="container hidden">
     <h2>おさらいモード</h2>
     <h3>📚 保存された間違い単語 <span id="reviewWordList_num"></span></h3>
@@ -185,16 +173,16 @@
     </div>
   </div>
 
-  <!-- 統計データ画面 -->
   <div id="statsMenu" class="container hidden">
     <h2>統計データ</h2>
     <div id="statsContent"></div>
+    <div id="versionInfo">ver. 1.1.0</div>
+    <br>
     <div class="button-group">
       <button onclick="backToModeMenu()">モード選択に戻る</button>
     </div>
   </div>
 
-  <!-- 実践モード設定画面 -->
   <div id="practiceMenu" class="container hidden">
     <h2 id="practiceMenuTitle">実践モード設定</h2>
     <div class="practice-settings-section">
@@ -218,7 +206,6 @@
     </div>
   </div>
 
-  <!-- 実践問題画面 -->
   <div id="practiceQuestion" class="container hidden">
     <div class="question" id="questionWord"></div>
     <div class="score">
@@ -232,11 +219,9 @@
     <div class="button-group">
       <button id="nextQuestion" onclick="nextQuestion()">次へ</button>
       <br>
-      <!-- 結果画面でのみ表示（セッションおさらー中は非表示） -->
       <button id="reviewButton" class="btn-session-review hidden" onclick="goReviewPractice()">
         📝 この問題だけおさらいする
       </button>
-      <br>
       <button id="backFromQuestionBtn" onclick="backFromQuestion()">メニューに戻る</button>
     </div>
   </div>
@@ -287,7 +272,7 @@
   let selectedLevel         = 0;
   let selectedSections      = [];
   let filteredWords         = [];
-  let originalFilteredWords = [];
+  let originalFilteredWords = []; 
   let memorizeIndex         = 0;
   let memorizeStage         = 'word';
   let correctCount          = 0;
@@ -325,6 +310,21 @@
     saveStats(s);
     studyStartTime = null;
   }
+
+  function saveCurrentIncorrectWords() {
+    if (!sub_incorrectWords.length) return;
+    if (isReviewMode) {
+      saveIncorrectWords(sub_incorrectWords);
+    } else {
+      saveIncorrectWords(loadIncorrectWords().concat(sub_incorrectWords));
+    }
+    sub_incorrectWords = [];
+  }
+
+  window.addEventListener('beforeunload', function() {
+    flushStudyTime();
+    saveCurrentIncorrectWords();
+  });
 
   function getLevelSections(level) {
     const ranges = {
@@ -491,7 +491,6 @@
   }
 
   function backFromPracticeMenu() {
-    // 設定画面に戻る際も念のためフラッシュ（通常は0秒だが安全のため）
     flushStudyTime();
     document.getElementById('practiceMenu').classList.add('hidden');
     if (isSessionReview) {
@@ -515,7 +514,6 @@
   }
 
   function backFromQuestion() {
-    // ★ 中断時：経過時間と間違い単語を保存
     flushStudyTime();
     saveCurrentIncorrectWords();
 
@@ -647,6 +645,7 @@
     isReviewMode    = false;
     filteredWords   = sessionWords;
 
+    flushStudyTime();
     document.getElementById('practiceQuestion').classList.add('hidden');
     document.getElementById('reviewButton').classList.add('hidden');
     document.getElementById('practiceMenuTitle').textContent = 'おさらい設定（今回の間違い ' + sessionWords.length + '語）';
@@ -663,7 +662,6 @@
       document.getElementById('nextQuestion').disabled = true;
       flushStudyTime();
 
-      // スコアサマリー
       const pct       = Math.round(correctCount / totalCount * 100);
       const summaryEl = document.getElementById('scoreSummary');
       summaryEl.className = (pct >= 70) ? 'score-summary' : 'score-summary score-bad';
@@ -708,7 +706,7 @@
         sectionEl.innerHTML =
           '<div class="result-header">' +
             '<span class="result-header-icon">🎉</span>' +
-            '<span class="result-title" style="color:#2e7d32">Congratulations! You got them all right!</span>' +
+            '<span class="result-title" style="color:#2e7d32">全問正解！素晴らしい！</span>' +
           '</div>';
         sectionEl.classList.remove('hidden');
       }
