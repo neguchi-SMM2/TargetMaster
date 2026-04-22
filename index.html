@@ -177,7 +177,7 @@
   <div id="statsMenu" class="container hidden">
     <h2>統計データ</h2>
     <div id="statsContent"></div>
-    <div id="versionInfo">ver. 1.1.0</div>
+    <div id="versionInfo">TargetMaster ver. 1.1.2</div>
     <br>
     <div class="button-group">
       <button onclick="backToModeMenu()">モード選択に戻る</button>
@@ -408,7 +408,8 @@
       '総回答数：' + s.totalAnswered + ' 回<br>' +
       '正解した回数：' + s.correct + ' 回<br>' +
       '間違えた回数：' + s.incorrect + ' 回<br>' +
-      '暗記した単語数：' + s.memorized + ' 個<br><br>' +
+      '暗記した単語数：' + s.memorized + ' 個<br>' +
+      '正答率：' + pct + ' %<br><br>' +
       '総学習時間：' + formatTime(s.totalStudyTime) +
       '</div>';
   }
